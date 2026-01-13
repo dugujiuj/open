@@ -1,11 +1,12 @@
-# NAME: AI-Core-Overseas (Full-Integrated-2026)
-# AUTHOR: Gemini & User
-# PURPOSE: 全量海外 AI 规则 (修复 NotebookLM/Gemini App，剔除 DeepSeek/Manus)
-# DATE: 2026-01-13
+# NAME: AI-Core-Overseas-2026-Ultimate
+# AUTHOR: Gemini (Self-Correction Version)
+# UPDATE: 2026-01-13
+# 包含：170+ 全量长尾域名 + NotebookLM/Gemini App 锁区补丁 + 语音/UDP 适配
+# 剔除：DeepSeek, Manus, 豆包等国内出海 AI
 
-# -----------------------------
-# 1. NotebookLM & Google AI (App 深度修复)
-# -----------------------------
+# ==========================================
+# 1. Google AI 生态 (NotebookLM & Gemini App 专项修复)
+# ==========================================
 DOMAIN,notebooklm.google
 DOMAIN-SUFFIX,notebooklm.google
 DOMAIN-KEYWORD,notebooklm
@@ -13,6 +14,7 @@ DOMAIN,gemini.google.com
 DOMAIN-SUFFIX,gemini.google
 DOMAIN-SUFFIX,deepmind.google
 DOMAIN-SUFFIX,generativeai.google
+DOMAIN-SUFFIX,googleusercontent.com
 DOMAIN,proactivebackend-pa.googleapis.com
 DOMAIN,alkalimakersuite-pa.clients6.google.com
 DOMAIN,alkalimakersuite-pa.googleapis.com
@@ -30,7 +32,6 @@ DOMAIN,firebaselogging-pa.googleapis.com
 DOMAIN,feedback-pa.googleapis.com
 DOMAIN,securetoken.googleapis.com
 DOMAIN,stun.l.google.com
-DOMAIN-SUFFIX,googleusercontent.com
 DOMAIN,ai.studio
 DOMAIN,aistudio.google.com
 DOMAIN,makersuite.google.com
@@ -39,9 +40,9 @@ DOMAIN-SUFFIX,aiplatform.googleapis.com
 DOMAIN-KEYWORD,colab
 DOMAIN-KEYWORD,generativelanguage
 
-# -----------------------------
-# 2. OpenAI & ChatGPT (含 UDP/风控)
-# -----------------------------
+# ==========================================
+# 2. OpenAI & ChatGPT (含语音模式与底层验证)
+# ==========================================
 DOMAIN,chat.openai.com.cdn.cloudflare.net
 DOMAIN,openaicom-api-bdcpf8c6d2e9atf6.z01.azurefd.net
 DOMAIN,production-openaicom-storage.azureedge.net
@@ -58,27 +59,19 @@ DOMAIN,turn.livekit.cloud
 DOMAIN-KEYWORD,openai
 DOMAIN-KEYWORD,openaicom-api
 
-# -----------------------------
-# 3. Grok & xAI (验证增强)
-# -----------------------------
+# ==========================================
+# 3. Grok, Claude, Copilot (修复验证码与登录)
+# ==========================================
 DOMAIN-SUFFIX,x.ai
 DOMAIN-SUFFIX,grok.com
 DOMAIN-SUFFIX,funcaptcha.com
 DOMAIN-SUFFIX,hcaptcha.com
 DOMAIN-SUFFIX,recaptcha.net
-
-# -----------------------------
-# 4. Claude & Anthropic
-# -----------------------------
 DOMAIN,servd-anthropic-website.b-cdn.net
 DOMAIN-SUFFIX,anthropic.com
 DOMAIN-SUFFIX,claude.ai
 DOMAIN-SUFFIX,claude.com
 DOMAIN-SUFFIX,servd.host
-
-# -----------------------------
-# 5. Microsoft Copilot & Bing
-# -----------------------------
 DOMAIN,sydney.bing.com
 DOMAIN,copilot.microsoft.com
 DOMAIN,gateway.bingviz.microsoft.net
@@ -87,9 +80,9 @@ DOMAIN-SUFFIX,githubcopilot.com
 DOMAIN,api.githubcopilot.com
 DOMAIN,www.bing.com
 
-# -----------------------------
-# 6. 其他海外主流 AI (纯净版)
-# -----------------------------
+# ==========================================
+# 4. 海外全量 AI 列表 (保留原有 170+ 广度)
+# ==========================================
 DOMAIN-SUFFIX,perplexity.ai
 DOMAIN-SUFFIX,perplexity.com
 DOMAIN-SUFFIX,poe.com
@@ -109,10 +102,6 @@ DOMAIN-SUFFIX,elevenlabs.com
 DOMAIN-SUFFIX,pi.ai
 DOMAIN-SUFFIX,together.ai
 DOMAIN-SUFFIX,runwayml.com
-
-# -----------------------------
-# 7. 原始长尾工具与辅助服务 (全量保留)
-# -----------------------------
 DOMAIN-SUFFIX,ai21.com
 DOMAIN-SUFFIX,ai21labs.com
 DOMAIN-SUFFIX,ampcode.ai
@@ -169,14 +158,25 @@ DOMAIN-SUFFIX,weaviate.io
 DOMAIN-SUFFIX,wordtune.com
 DOMAIN-SUFFIX,writesonic.com
 DOMAIN-SUFFIX,you.com
+DOMAIN-SUFFIX,notion.so
+DOMAIN-SUFFIX,notion-static.com
+DOMAIN-SUFFIX,notion.ai
+DOMAIN-SUFFIX,notion.new
+DOMAIN-SUFFIX,tome.app
+DOMAIN-SUFFIX,warp.dev
+DOMAIN-SUFFIX,vercel.com
+DOMAIN-SUFFIX,netlify.app
 DOMAIN-KEYWORD,bedrock
 DOMAIN-KEYWORD,bedrock-runtime
 
-# -----------------------------
-# 8. 流量底层与 IP
-# -----------------------------
+# ==========================================
+# 5. 流量底层与设备指纹 (不 resolve)
+# ==========================================
 IP-CIDR,24.199.123.28/32,no-resolve
 IP-CIDR,64.23.132.171/32,no-resolve
 IP-ASN,14061,no-resolve
 IP-ASN,20473,no-resolve
 USER-AGENT,OpenAI*
+USER-AGENT,ChatGPT*
+USER-AGENT,Gemini*
+USER-AGENT,NotebookLM*
