@@ -1,71 +1,114 @@
-# NAME: AI-Core-Overseas (Upgraded)
-# AUTHOR: ChatGPT
-# PURPOSE: 精简 Shadowrocket AI 分流规则（含 NotebookLM / Bard / AI Studio）
+# NAME: AI-Core-Overseas (Pure-Overseas)
+# AUTHOR: Gemini & User
+# PURPOSE: 2026 纯净版海外 AI 分流（已移出 DeepSeek, Manus 等国内出海 AI）
 # DATE: 2026-01-13
 
 # -----------------------------
-# DOMAIN（精确域名）
+# 1. NotebookLM & Google AI (完全补全)
 # -----------------------------
-DOMAIN,ai.google.dev
-DOMAIN,alkalimakersuite-pa.clients6.google.com
-DOMAIN,api.githubcopilot.com
-DOMAIN,chat.openai.com.cdn.cloudflare.net
-DOMAIN,copilot.microsoft.com
-DOMAIN,gateway.bingviz.microsoft.net
-DOMAIN,gateway.bingviz.microsoftapp.net
-DOMAIN,generativelanguage.googleapis.com
-DOMAIN,makersuite.google.com
-DOMAIN,openaicom-api-bdcpf8c6d2e9atf6.z01.azurefd.net
-DOMAIN,production-openaicom-storage.azureedge.net
-DOMAIN,sydney.bing.com
-DOMAIN,www.bing.com
-DOMAIN,servd-anthropic-website.b-cdn.net
 DOMAIN,notebooklm.google
 DOMAIN,notebooklm.google.com
 DOMAIN,bard.google.com
 DOMAIN,ai.studio
 DOMAIN,aistudio.google.com
+DOMAIN,ai.google.dev
+DOMAIN,alkalimakersuite-pa.clients6.google.com
+DOMAIN,alkalimakersuite-pa.googleapis.com
+DOMAIN,generativelanguage.googleapis.com
+DOMAIN,makersuite.google.com
+DOMAIN-SUFFIX,deepmind.google
+DOMAIN-SUFFIX,gemini.google
+DOMAIN-SUFFIX,gemini.google.com
+DOMAIN-SUFFIX,generativeai.google
+DOMAIN-KEYWORD,colab
+DOMAIN-KEYWORD,generativelanguage
 
 # -----------------------------
-# DOMAIN-SUFFIX（通配域名）
+# 2. OpenAI & ChatGPT (含全套风控与静态资源)
 # -----------------------------
-DOMAIN-SUFFIX,anthropic.com
+DOMAIN,chat.openai.com.cdn.cloudflare.net
+DOMAIN,openaicom-api-bdcpf8c6d2e9atf6.z01.azurefd.net
+DOMAIN,production-openaicom-storage.azureedge.net
+DOMAIN-SUFFIX,chatgpt.com
+DOMAIN-SUFFIX,openai.com
 DOMAIN-SUFFIX,ai.com
+DOMAIN-SUFFIX,oaistatic.com
+DOMAIN-SUFFIX,oaiusercontent.com
+DOMAIN-SUFFIX,openai.azure.com
+DOMAIN-SUFFIX,arkoselabs.com
+DOMAIN-SUFFIX,identrust.com
+DOMAIN-SUFFIX,auth0.com
+DOMAIN-KEYWORD,openai
+DOMAIN-KEYWORD,openaicom-api
+
+# -----------------------------
+# 3. Claude & Anthropic
+# -----------------------------
+DOMAIN,servd-anthropic-website.b-cdn.net
+DOMAIN-SUFFIX,anthropic.com
+DOMAIN-SUFFIX,claude.ai
+DOMAIN-SUFFIX,claude.com
+DOMAIN-SUFFIX,servd.host
+
+# -----------------------------
+# 4. Grok & xAI (Elon Musk 旗下)
+# -----------------------------
+DOMAIN-SUFFIX,x.ai
+DOMAIN-SUFFIX,grok.com
+
+# -----------------------------
+# 5. 其他主流海外顶级 AI
+# -----------------------------
+DOMAIN-SUFFIX,perplexity.ai
+DOMAIN-SUFFIX,perplexity.com
+DOMAIN-SUFFIX,poe.com
+DOMAIN-SUFFIX,midjourney.com
+DOMAIN-SUFFIX,huggingface.co
+DOMAIN-SUFFIX,hf.co
+DOMAIN-SUFFIX,mistral.ai
+DOMAIN-SUFFIX,character.ai
+DOMAIN-SUFFIX,cursor.com
+DOMAIN-SUFFIX,cursor.sh
+DOMAIN-SUFFIX,windsurf.ai
+DOMAIN-SUFFIX,luma.ai
+DOMAIN-SUFFIX,suno.ai
+DOMAIN-SUFFIX,udio.com
+DOMAIN-SUFFIX,elevenlabs.io
+DOMAIN-SUFFIX,elevenlabs.com
+
+# -----------------------------
+# 6. Microsoft Copilot (Bing AI)
+# -----------------------------
+DOMAIN,sydney.bing.com
+DOMAIN,copilot.microsoft.com
+DOMAIN,gateway.bingviz.microsoft.net
+DOMAIN,gateway.bingviz.microsoftapp.net
+DOMAIN-SUFFIX,githubcopilot.com
+DOMAIN,api.githubcopilot.com
+DOMAIN,www.bing.com
+
+# -----------------------------
+# 7. 补充海外工具类 AI (保持原样)
+# -----------------------------
 DOMAIN-SUFFIX,ai21.com
 DOMAIN-SUFFIX,ai21labs.com
 DOMAIN-SUFFIX,aiplatform.googleapis.com
 DOMAIN-SUFFIX,ampcode.ai
 DOMAIN-SUFFIX,ampcode.com
-DOMAIN-SUFFIX,character.ai
-DOMAIN-SUFFIX,chatgpt.com
 DOMAIN-SUFFIX,civitai.com
-DOMAIN-SUFFIX,claude.ai
-DOMAIN-SUFFIX,claude.com
 DOMAIN-SUFFIX,clipdrop.co
 DOMAIN-SUFFIX,codeium.com
 DOMAIN-SUFFIX,cohere.ai
 DOMAIN-SUFFIX,cohere.com
 DOMAIN-SUFFIX,copy.ai
-DOMAIN-SUFFIX,cursor.com
-DOMAIN-SUFFIX,cursor.sh
 DOMAIN-SUFFIX,deepinfra.com
 DOMAIN-SUFFIX,deepmind.com
-DOMAIN-SUFFIX,deepmind.google
 DOMAIN-SUFFIX,descript.com
 DOMAIN-SUFFIX,dreamstudio.ai
-DOMAIN-SUFFIX,elevenlabs.com
-DOMAIN-SUFFIX,elevenlabs.io
 DOMAIN-SUFFIX,exa.ai
 DOMAIN-SUFFIX,fireflies.ai
 DOMAIN-SUFFIX,fireworks.ai
-DOMAIN-SUFFIX,gemini.google
-DOMAIN-SUFFIX,gemini.google.com
-DOMAIN-SUFFIX,generativeai.google
-DOMAIN-SUFFIX,githubcopilot.com
-DOMAIN-SUFFIX,google.com
 DOMAIN-SUFFIX,grammarly.com
-DOMAIN-SUFFIX,hf.co
-DOMAIN-SUFFIX,huggingface.co
 DOMAIN-SUFFIX,ideogram.ai
 DOMAIN-SUFFIX,inflection.ai
 DOMAIN-SUFFIX,jasper.ai
@@ -77,28 +120,19 @@ DOMAIN-SUFFIX,langsmith.com
 DOMAIN-SUFFIX,leonardo.ai
 DOMAIN-SUFFIX,llamaindex.ai
 DOMAIN-SUFFIX,lovart.ai
-DOMAIN-SUFFIX,luma.ai
-DOMAIN-SUFFIX,manus.ai
 DOMAIN-SUFFIX,meetgeek.ai
 DOMAIN-SUFFIX,meta.ai
-DOMAIN-SUFFIX,midjourney.com
-DOMAIN-SUFFIX,mistral.ai
 DOMAIN-SUFFIX,murf.ai
-DOMAIN-SUFFIX,openai.azure.com
-DOMAIN-SUFFIX,openai.com
 DOMAIN-SUFFIX,opencode.ai
 DOMAIN-SUFFIX,opencode.com
 DOMAIN-SUFFIX,opencode.dev
 DOMAIN-SUFFIX,openrouter.ai
 DOMAIN-SUFFIX,otter.ai
-DOMAIN-SUFFIX,perplexity.ai
-DOMAIN-SUFFIX,perplexity.com
 DOMAIN-SUFFIX,phind.com
 DOMAIN-SUFFIX,pi.ai
 DOMAIN-SUFFIX,pinecone.io
 DOMAIN-SUFFIX,play.ht
 DOMAIN-SUFFIX,playgroundai.com
-DOMAIN-SUFFIX,poe.com
 DOMAIN-SUFFIX,quillbot.com
 DOMAIN-SUFFIX,reka.ai
 DOMAIN-SUFFIX,replicate.com
@@ -108,33 +142,21 @@ DOMAIN-SUFFIX,runpod.io
 DOMAIN-SUFFIX,runwayml.com
 DOMAIN-SUFFIX,rytr.me
 DOMAIN-SUFFIX,stability.ai
-DOMAIN-SUFFIX,suno.ai
 DOMAIN-SUFFIX,supermaven.com
 DOMAIN-SUFFIX,tabnine.com
 DOMAIN-SUFFIX,together.ai
 DOMAIN-SUFFIX,trychroma.com
 DOMAIN-SUFFIX,turn.livekit.cloud
-DOMAIN-SUFFIX,udio.com
 DOMAIN-SUFFIX,voice.ai
 DOMAIN-SUFFIX,weaviate.io
-DOMAIN-SUFFIX,windsurf.ai
 DOMAIN-SUFFIX,wordtune.com
 DOMAIN-SUFFIX,writesonic.com
-DOMAIN-SUFFIX,x.ai
 DOMAIN-SUFFIX,you.com
-
-# -----------------------------
-# DOMAIN-KEYWORD（关键词匹配）
-# -----------------------------
 DOMAIN-KEYWORD,bedrock
 DOMAIN-KEYWORD,bedrock-runtime
-DOMAIN-KEYWORD,colab
-DOMAIN-KEYWORD,generativelanguage
-DOMAIN-KEYWORD,openai
-DOMAIN-KEYWORD,openaicom-api
 
 # -----------------------------
-# IP-CIDR / IP-ASN / USER-AGENT（保持原样）
+# 8. IP & Agent
 # -----------------------------
 IP-CIDR,24.199.123.28/32,no-resolve
 IP-CIDR,64.23.132.171/32,no-resolve
