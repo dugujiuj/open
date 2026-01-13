@@ -1,42 +1,46 @@
-# NAME: AI-Core-Overseas (2026-Final-Check)
+# NAME: AI-Core-Overseas (Full-Integrated-2026)
 # AUTHOR: Gemini & User
-# PURPOSE: 解决 Gemini/NotebookLM App 锁区、连接失败，剔除国内 AI
+# PURPOSE: 全量海外 AI 规则 (修复 NotebookLM/Gemini App，剔除 DeepSeek/Manus)
 # DATE: 2026-01-13
 
 # -----------------------------
-# 1. Gemini & Google AI (App 专项补强)
-# -----------------------------
-DOMAIN,gemini.google.com
-DOMAIN,proactivebackend-pa.googleapis.com
-DOMAIN,client6.google.com
-DOMAIN,assistant.google.com
-DOMAIN,firebaselogging-pa.googleapis.com
-DOMAIN,content-storage-upload.googleapis.com
-DOMAIN,firestore.googleapis.com
-DOMAIN,speech.googleapis.com
-DOMAIN,vision.googleapis.com
-DOMAIN-SUFFIX,gemini.google
-DOMAIN-SUFFIX,deepmind.google
-DOMAIN-SUFFIX,generativeai.google
-DOMAIN,ai.studio
-DOMAIN,aistudio.google.com
-DOMAIN,makersuite.google.com
-DOMAIN,ai.google.dev
-DOMAIN-KEYWORD,colab
-DOMAIN-KEYWORD,generativelanguage
-
-# -----------------------------
-# 2. NotebookLM (App 专项补强)
+# 1. NotebookLM & Google AI (App 深度修复)
 # -----------------------------
 DOMAIN,notebooklm.google
 DOMAIN-SUFFIX,notebooklm.google
 DOMAIN-KEYWORD,notebooklm
+DOMAIN,gemini.google.com
+DOMAIN-SUFFIX,gemini.google
+DOMAIN-SUFFIX,deepmind.google
+DOMAIN-SUFFIX,generativeai.google
+DOMAIN,proactivebackend-pa.googleapis.com
 DOMAIN,alkalimakersuite-pa.clients6.google.com
 DOMAIN,alkalimakersuite-pa.googleapis.com
 DOMAIN,generativelanguage.googleapis.com
+DOMAIN,content-storage-upload.googleapis.com
+DOMAIN,firestore.googleapis.com
+DOMAIN,speech.googleapis.com
+DOMAIN,vision.googleapis.com
+DOMAIN,lens.google.com
+DOMAIN,assistant.google.com
+DOMAIN,client6.google.com
+DOMAIN,clientservices.googleapis.com
+DOMAIN,firebaseinstallations.googleapis.com
+DOMAIN,firebaselogging-pa.googleapis.com
+DOMAIN,feedback-pa.googleapis.com
+DOMAIN,securetoken.googleapis.com
+DOMAIN,stun.l.google.com
+DOMAIN-SUFFIX,googleusercontent.com
+DOMAIN,ai.studio
+DOMAIN,aistudio.google.com
+DOMAIN,makersuite.google.com
+DOMAIN,ai.google.dev
+DOMAIN-SUFFIX,aiplatform.googleapis.com
+DOMAIN-KEYWORD,colab
+DOMAIN-KEYWORD,generativelanguage
 
 # -----------------------------
-# 3. OpenAI & ChatGPT (含全套验证风控)
+# 2. OpenAI & ChatGPT (含 UDP/风控)
 # -----------------------------
 DOMAIN,chat.openai.com.cdn.cloudflare.net
 DOMAIN,openaicom-api-bdcpf8c6d2e9atf6.z01.azurefd.net
@@ -50,11 +54,12 @@ DOMAIN-SUFFIX,openai.azure.com
 DOMAIN-SUFFIX,arkoselabs.com
 DOMAIN-SUFFIX,identrust.com
 DOMAIN-SUFFIX,auth0.com
+DOMAIN,turn.livekit.cloud
 DOMAIN-KEYWORD,openai
 DOMAIN-KEYWORD,openaicom-api
 
 # -----------------------------
-# 4. Grok & xAI (修复频繁真人验证)
+# 3. Grok & xAI (验证增强)
 # -----------------------------
 DOMAIN-SUFFIX,x.ai
 DOMAIN-SUFFIX,grok.com
@@ -63,7 +68,7 @@ DOMAIN-SUFFIX,hcaptcha.com
 DOMAIN-SUFFIX,recaptcha.net
 
 # -----------------------------
-# 5. Claude & Anthropic (界面渲染增强)
+# 4. Claude & Anthropic
 # -----------------------------
 DOMAIN,servd-anthropic-website.b-cdn.net
 DOMAIN-SUFFIX,anthropic.com
@@ -72,7 +77,7 @@ DOMAIN-SUFFIX,claude.com
 DOMAIN-SUFFIX,servd.host
 
 # -----------------------------
-# 6. Microsoft Copilot & Bing AI
+# 5. Microsoft Copilot & Bing
 # -----------------------------
 DOMAIN,sydney.bing.com
 DOMAIN,copilot.microsoft.com
@@ -83,7 +88,7 @@ DOMAIN,api.githubcopilot.com
 DOMAIN,www.bing.com
 
 # -----------------------------
-# 7. 其他主流海外顶级 AI (已剔除 DeepSeek/Manus)
+# 6. 其他海外主流 AI (纯净版)
 # -----------------------------
 DOMAIN-SUFFIX,perplexity.ai
 DOMAIN-SUFFIX,perplexity.com
@@ -103,13 +108,15 @@ DOMAIN-SUFFIX,elevenlabs.io
 DOMAIN-SUFFIX,elevenlabs.com
 DOMAIN-SUFFIX,pi.ai
 DOMAIN-SUFFIX,together.ai
+DOMAIN-SUFFIX,runwayml.com
 
 # -----------------------------
-# 8. 海外 AI 工具与后端 (维持原样)
+# 7. 原始长尾工具与辅助服务 (全量保留)
 # -----------------------------
 DOMAIN-SUFFIX,ai21.com
 DOMAIN-SUFFIX,ai21labs.com
-DOMAIN-SUFFIX,aiplatform.googleapis.com
+DOMAIN-SUFFIX,ampcode.ai
+DOMAIN-SUFFIX,ampcode.com
 DOMAIN-SUFFIX,civitai.com
 DOMAIN-SUFFIX,clipdrop.co
 DOMAIN-SUFFIX,codeium.com
@@ -117,7 +124,6 @@ DOMAIN-SUFFIX,cohere.ai
 DOMAIN-SUFFIX,cohere.com
 DOMAIN-SUFFIX,copy.ai
 DOMAIN-SUFFIX,deepinfra.com
-DOMAIN-SUFFIX,deepmind.com
 DOMAIN-SUFFIX,descript.com
 DOMAIN-SUFFIX,dreamstudio.ai
 DOMAIN-SUFFIX,exa.ai
@@ -138,6 +144,9 @@ DOMAIN-SUFFIX,lovart.ai
 DOMAIN-SUFFIX,meetgeek.ai
 DOMAIN-SUFFIX,meta.ai
 DOMAIN-SUFFIX,murf.ai
+DOMAIN-SUFFIX,opencode.ai
+DOMAIN-SUFFIX,opencode.com
+DOMAIN-SUFFIX,opencode.dev
 DOMAIN-SUFFIX,openrouter.ai
 DOMAIN-SUFFIX,otter.ai
 DOMAIN-SUFFIX,phind.com
@@ -150,14 +159,11 @@ DOMAIN-SUFFIX,replicate.com
 DOMAIN-SUFFIX,replit.com
 DOMAIN-SUFFIX,respeecher.com
 DOMAIN-SUFFIX,runpod.io
-DOMAIN-SUFFIX,runwayml.com
 DOMAIN-SUFFIX,rytr.me
 DOMAIN-SUFFIX,stability.ai
 DOMAIN-SUFFIX,supermaven.com
 DOMAIN-SUFFIX,tabnine.com
-DOMAIN-SUFFIX,together.ai
 DOMAIN-SUFFIX,trychroma.com
-DOMAIN-SUFFIX,turn.livekit.cloud
 DOMAIN-SUFFIX,voice.ai
 DOMAIN-SUFFIX,weaviate.io
 DOMAIN-SUFFIX,wordtune.com
@@ -167,7 +173,7 @@ DOMAIN-KEYWORD,bedrock
 DOMAIN-KEYWORD,bedrock-runtime
 
 # -----------------------------
-# 9. 流量底层与身份代理
+# 8. 流量底层与 IP
 # -----------------------------
 IP-CIDR,24.199.123.28/32,no-resolve
 IP-CIDR,64.23.132.171/32,no-resolve
