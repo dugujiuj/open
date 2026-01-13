@@ -1,10 +1,21 @@
-# NAME: AI-Core-Overseas (Pure-Overseas)
+# NAME: AI-Core-Overseas (Grok-Optimized)
 # AUTHOR: Gemini & User
-# PURPOSE: 2026 纯净版海外 AI 分流（已移出 DeepSeek, Manus 等国内出海 AI）
+# PURPOSE: 2026 终极 AI 分流（修复 Grok 频繁验证问题）
 # DATE: 2026-01-13
 
 # -----------------------------
-# 1. NotebookLM & Google AI (完全补全)
+# 1. Grok & xAI (补全验证增强)
+# -----------------------------
+DOMAIN-SUFFIX,x.ai
+DOMAIN-SUFFIX,grok.com
+# 以下 3 条是 Grok 与 X 验证的关键
+DOMAIN-SUFFIX,arkoselabs.com
+DOMAIN-SUFFIX,funcaptcha.com
+DOMAIN-SUFFIX,recaptcha.net
+DOMAIN-SUFFIX,hcaptcha.com
+
+# -----------------------------
+# 2. NotebookLM & Google AI
 # -----------------------------
 DOMAIN,notebooklm.google
 DOMAIN,notebooklm.google.com
@@ -24,7 +35,7 @@ DOMAIN-KEYWORD,colab
 DOMAIN-KEYWORD,generativelanguage
 
 # -----------------------------
-# 2. OpenAI & ChatGPT (含全套风控与静态资源)
+# 3. OpenAI & ChatGPT
 # -----------------------------
 DOMAIN,chat.openai.com.cdn.cloudflare.net
 DOMAIN,openaicom-api-bdcpf8c6d2e9atf6.z01.azurefd.net
@@ -35,26 +46,19 @@ DOMAIN-SUFFIX,ai.com
 DOMAIN-SUFFIX,oaistatic.com
 DOMAIN-SUFFIX,oaiusercontent.com
 DOMAIN-SUFFIX,openai.azure.com
-DOMAIN-SUFFIX,arkoselabs.com
 DOMAIN-SUFFIX,identrust.com
 DOMAIN-SUFFIX,auth0.com
 DOMAIN-KEYWORD,openai
 DOMAIN-KEYWORD,openaicom-api
 
 # -----------------------------
-# 3. Claude & Anthropic
+# 4. Claude & Anthropic
 # -----------------------------
 DOMAIN,servd-anthropic-website.b-cdn.net
 DOMAIN-SUFFIX,anthropic.com
 DOMAIN-SUFFIX,claude.ai
 DOMAIN-SUFFIX,claude.com
 DOMAIN-SUFFIX,servd.host
-
-# -----------------------------
-# 4. Grok & xAI (Elon Musk 旗下)
-# -----------------------------
-DOMAIN-SUFFIX,x.ai
-DOMAIN-SUFFIX,grok.com
 
 # -----------------------------
 # 5. 其他主流海外顶级 AI
@@ -77,7 +81,7 @@ DOMAIN-SUFFIX,elevenlabs.io
 DOMAIN-SUFFIX,elevenlabs.com
 
 # -----------------------------
-# 6. Microsoft Copilot (Bing AI)
+# 6. Microsoft Copilot
 # -----------------------------
 DOMAIN,sydney.bing.com
 DOMAIN,copilot.microsoft.com
@@ -88,7 +92,7 @@ DOMAIN,api.githubcopilot.com
 DOMAIN,www.bing.com
 
 # -----------------------------
-# 7. 补充海外工具类 AI (保持原样)
+# 7. 补充海外工具 (保持原样)
 # -----------------------------
 DOMAIN-SUFFIX,ai21.com
 DOMAIN-SUFFIX,ai21labs.com
