@@ -1,11 +1,5 @@
 payload:
-  # ------------------ 1. [DOMAIN] 精确域名 (优先匹配) ------------------
-  - DOMAIN,notebooklm.googleapis.com
-  - DOMAIN,notebooklm-pa.googleapis.com
-  - DOMAIN,gemini.google.com
-  - DOMAIN,proactive.google.com
-  - DOMAIN,cloudcode-pa.googleapis.com
-  - DOMAIN,cloudaicompanion.googleapis.com
+  # ------------------ 1. [DOMAIN] 精确域名 ------------------
   - DOMAIN,yt3.googleusercontent.com
   - DOMAIN,youtubei.googleapis.com
   - DOMAIN,youtube-ui.l.google.com
@@ -13,24 +7,18 @@ payload:
   - DOMAIN,youtubeembeddedplayer.googleapis.com
   - DOMAIN,youtube-nocookie.com
   - DOMAIN,googleflights.com
+  - DOMAIN,proactive.google.com
 
-  # ------------------ 2. [DOMAIN-SUFFIX] 后缀域名 (全家桶覆盖) ------------------
-  # YouTube 核心
+  # ------------------ 2. [DOMAIN-SUFFIX] 后缀域名 ------------------
   - DOMAIN-SUFFIX,youtube.com
   - DOMAIN-SUFFIX,youtu.be
   - DOMAIN-SUFFIX,ytimg.com
   - DOMAIN-SUFFIX,googlevideo.com
-  - DOMAIN-SUFFIX,youtube-nocookie.com
-  # Google AI & 核心
   - DOMAIN-SUFFIX,google.com
-  - DOMAIN-SUFFIX,gstatic.com         # [补齐] 极重要：Google 资源/样式加载
+  - DOMAIN-SUFFIX,gstatic.com
   - DOMAIN-SUFFIX,googleusercontent.com
   - DOMAIN-SUFFIX,googleapis.com
-  - DOMAIN-SUFFIX,deepmind.google
-  - DOMAIN-SUFFIX,generativeai.google
-  - DOMAIN-SUFFIX,ai.google.dev
   - DOMAIN-SUFFIX,g.co
-  # Google 办公与生产力 [从末尾错误格式中提取补齐]
   - DOMAIN-SUFFIX,gmail.com
   - DOMAIN-SUFFIX,googlemail.com
   - DOMAIN-SUFFIX,meet.google.com
@@ -40,33 +28,20 @@ payload:
   - DOMAIN-SUFFIX,slides.google.com
   - DOMAIN-SUFFIX,calendar.google.com
   - DOMAIN-SUFFIX,scholar.google.com
-  # Firebase 系列
   - DOMAIN-SUFFIX,firebaseio.com
   - DOMAIN-SUFFIX,firebaseapp.com
   - DOMAIN-SUFFIX,firebase.com
-  - DOMAIN-SUFFIX,firebaseinstallations.googleapis.com
-  - DOMAIN-SUFFIX,firebaseremoteconfig.googleapis.com
-  - DOMAIN-SUFFIX,firebaseappcheck.googleapis.com
-  - DOMAIN-SUFFIX,firebasedynamiclinks.googleapis.com
-  # Chrome & 广告与验证
   - DOMAIN-SUFFIX,googlechrome.com
   - DOMAIN-SUFFIX,chrome.com
-  - DOMAIN-SUFFIX,chromeos.dev
-  - DOMAIN-SUFFIX,chromium.org
-  - DOMAIN-SUFFIX,googlesyndication.com
-  - DOMAIN-SUFFIX,googleadservices.com
   - DOMAIN-SUFFIX,doubleclick.net
-  - DOMAIN-SUFFIX,googletagmanager.com
-  - DOMAIN-SUFFIX,googletagservices.com
-  - DOMAIN-SUFFIX,googleoptimize.com
   - DOMAIN-SUFFIX,recaptcha.net
 
   # ------------------ 3. [DOMAIN-KEYWORD] 模糊匹配 ------------------
   - DOMAIN-KEYWORD,youtube
 
-  # ------------------ 4. [IP-CIDR] IP 兜底 ------------------
+  # ------------------ 4. [IP-CIDR] IP 匹配 ------------------
   - IP-CIDR,64.233.160.0/19,no-resolve
   - IP-CIDR,142.250.0.0/15,no-resolve
 
-  # ------------------ 5. [USER-AGENT] 客户端识别 ------------------
+  # ------------------ 5. [USER-AGENT] ------------------
   - USER-AGENT,YouTube*
