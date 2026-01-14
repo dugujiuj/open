@@ -1,0 +1,61 @@
+payload:
+  # ---------------- Line ----------------
+  - +.line.me
+  - +.linecorp.com
+  - +.lin.ee
+  - +.linefriends.com
+  - +.linetv.tw
+  - +.linegame.jp
+  - +.line-scdn.net
+  - +.line-cdn.net
+  - +.line-apps.com
+
+  # ---------------- Facebook / Instagram ----------------
+  - +.facebook.com
+  - +.fb.com
+  - +.fbcdn.net
+  - +.fbcdn.com
+  - +.fbwatch.com
+  - +.instagram.com
+  - +.cdninstagram.com
+  - +.instagramcdn.com
+  - +.graph.instagram.com
+  - +.graph-fallback.instagram.com
+
+  # ---------------- Twitter / X ----------------
+  - +.twitter.com
+  - +.t.co
+  - +.twimg.com
+  - +.twttr.com
+  - +.twitpic.com
+  - +.periscope.tv
+  - +.pscp.tv
+
+  # ---------------- LinkedIn ----------------
+  - +.linkedin.com
+  - +.licdn.com
+  - +.linkedin.cn
+  - +.linkedin.at
+  - +.lnkd.in
+
+  # ---------------- VK / VK Messenger / Vkontakte ----------------
+  - +.vk.com
+  - +.vk.me
+  - +.vklive.app
+  - +.vkmessenger.app
+  - +.vkcdn.net
+  - +.vkcdn.me
+  - +.vkcloud-static.ru
+
+  # ---------------- Threads ----------------
+  - +.threads.net
+  - +.threads.com
+
+  # ---------------- Misskey ----------------
+  - +.misskey.io
+  - +.misskeyusercontent.jp
+  - +.misskey.stream
+  - +.misskey.art
+  - +.misskey.cloud
+  - +.misskey.design
+  - +.misskey.flowers
