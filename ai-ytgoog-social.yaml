@@ -105,7 +105,7 @@ payload:
   - DOMAIN-KEYWORD,openai
   - DOMAIN-KEYWORD,openaicom-api
 
-  # ------------------ 社交与 Telegram (全量修正版) ------------------
+  # ------------------ 社交与 Telegram (完整无损版) ------------------
   - DOMAIN-SUFFIX,t.me
   - DOMAIN-SUFFIX,tdesktop.com
   - DOMAIN-SUFFIX,telegra.ph
