@@ -1,0 +1,24 @@
+payload:
+  # ------------------ 精确域名 ------------------
+  - DOMAIN,yt3.googleusercontent.com
+  - DOMAIN,youtubei.googleapis.com
+  - DOMAIN,youtube-ui.l.google.com
+  - DOMAIN,wide-youtube.l.google.com
+  - DOMAIN,youtubeembeddedplayer.googleapis.com
+  - DOMAIN,youtube-nocookie.com
+
+  # ------------------ 后缀域名 ------------------
+  - DOMAIN-SUFFIX,youtube.com
+  - DOMAIN-SUFFIX,youtu.be
+  - DOMAIN-SUFFIX,ytimg.com
+  - DOMAIN-SUFFIX,googlevideo.com
+
+  # ------------------ 模糊域名兜底 ------------------
+  - DOMAIN-KEYWORD,youtube
+
+  # ------------------ 可选 IP 兜底 ------------------
+  - IP-CIDR,64.233.160.0/19,no-resolve
+  - IP-CIDR,142.250.0.0/15,no-resolve
+
+  # ------------------ 可选 USER-AGENT ------------------
+  - USER-AGENT,YouTube*
