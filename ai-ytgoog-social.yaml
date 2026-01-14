@@ -38,6 +38,7 @@ payload:
   - DOMAIN,production-openaicom-storage.azureedge.net
   - DOMAIN,turn.livekit.cloud
   - DOMAIN,servd-anthropic-website.b-cdn.net
+  - DOMAIN,ipleak.net/
 
   # ------------------ 后缀域名 ------------------
   - DOMAIN-SUFFIX,youtube.com
