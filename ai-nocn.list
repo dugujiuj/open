@@ -1,13 +1,9 @@
-[AI-Youtube-Google]
-
-# ------------------ 精确域名 ------------------
+# --- 1. [DOMAIN] 精确域名 ---
 DOMAIN,notebooklm.google
-DOMAIN-SUFFIX,notebooklm.google
 DOMAIN,gemini.google.com
-DOMAIN-SUFFIX,gemini.google
-DOMAIN-SUFFIX,deepmind.google
-DOMAIN-SUFFIX,generativeai.google
-DOMAIN-SUFFIX,googleusercontent.com
+DOMAIN,ai.studio
+DOMAIN,aistudio.google.com
+DOMAIN,makersuite.google.com
 DOMAIN,proactivebackend-pa.googleapis.com
 DOMAIN,alkalimakersuite-pa.clients6.google.com
 DOMAIN,alkalimakersuite-pa.googleapis.com
@@ -25,44 +21,52 @@ DOMAIN,firebaselogging-pa.googleapis.com
 DOMAIN,feedback-pa.googleapis.com
 DOMAIN,securetoken.googleapis.com
 DOMAIN,stun.l.google.com
-DOMAIN,ai.studio
-DOMAIN,aistudio.google.com
-DOMAIN,makersuite.google.com
-DOMAIN,ai.google.dev
-DOMAIN-SUFFIX,aiplatform.googleapis.com
 DOMAIN,chat.openai.com.cdn.cloudflare.net
 DOMAIN,openaicom-api-bdcpf8c6d2e9atf6.z01.azurefd.net
 DOMAIN,production-openaicom-storage.azureedge.net
+DOMAIN,turn.livekit.cloud
+DOMAIN,servd-anthropic-website.b-cdn.net
+
+# --- 2. [DOMAIN-SUFFIX] 后缀域名 ---
+DOMAIN-SUFFIX,notebooklm.google
+DOMAIN-SUFFIX,gemini.google
+DOMAIN-SUFFIX,deepmind.google
+DOMAIN-SUFFIX,generativeai.google
+DOMAIN-SUFFIX,ai.google.dev
+DOMAIN-SUFFIX,aiplatform.googleapis.com
 DOMAIN-SUFFIX,chatgpt.com
 DOMAIN-SUFFIX,openai.com
 DOMAIN-SUFFIX,ai.com
 DOMAIN-SUFFIX,oaistatic.com
 DOMAIN-SUFFIX,oaiusercontent.com
 DOMAIN-SUFFIX,openai.azure.com
-DOMAIN,turn.livekit.cloud
-DOMAIN,servd-anthropic-website.b-cdn.net
 DOMAIN-SUFFIX,anthropic.com
 DOMAIN-SUFFIX,claude.ai
 DOMAIN-SUFFIX,claude.com
 DOMAIN-SUFFIX,servd.host
-
-# ------------------ YouTube / Google ------------------
 DOMAIN-SUFFIX,google.com
+DOMAIN-SUFFIX,googleusercontent.com
+DOMAIN-SUFFIX,googleapis.com
+DOMAIN-SUFFIX,gstatic.com
 DOMAIN-SUFFIX,youtube.com
 DOMAIN-SUFFIX,youtu.be
+DOMAIN-SUFFIX,ytimg.com
+DOMAIN-SUFFIX,googlevideo.com
+DOMAIN-SUFFIX,recaptcha.net
 
-# ------------------ 模糊域名 ------------------
+# --- 3. [DOMAIN-KEYWORD] 关键字 ---
 DOMAIN-KEYWORD,notebooklm
 DOMAIN-KEYWORD,colab
 DOMAIN-KEYWORD,generativelanguage
 DOMAIN-KEYWORD,openai
 DOMAIN-KEYWORD,openaicom-api
 
-# ------------------ IP 兜底（小段/单 IP） ------------------
-IP-CIDR,64.233.160.0/19,no-resolve   # Google 核心出口（可选）
-IP-CIDR,142.250.0.0/15,no-resolve   # Google 核心出口（可选）
+# --- 4. [IP-CIDR] IP 匹配 ---
+IP-CIDR,64.233.160.0/19
+IP-CIDR,142.250.0.0/15
 
-# ------------------ USER-AGENT（可选） ------------------
+# --- 5. [USER-AGENT] 客户端识别 ---
 USER-AGENT,OpenAI*
 USER-AGENT,ChatGPT*
 USER-AGENT,Gemini*
+USER-AGENT,NotebookLM*
