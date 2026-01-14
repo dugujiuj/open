@@ -1,0 +1,99 @@
+# ===============================
+# YouTube + Google Unified List
+# ===============================
+
+# ------------------ 精确域名 ------------------
+yt3.googleusercontent.com
+youtubei.googleapis.com
+youtube-ui.l.google.com
+wide-youtube.l.google.com
+youtubeembeddedplayer.googleapis.com
+youtube-nocookie.com
+notebooklm.googleapis.com
+notebooklm-pa.googleapis.com
+gemini.google.com
+proactive.google.com
+cloudcode-pa.googleapis.com
+cloudaicompanion.googleapis.com
+googleflights.com
+
+# ------------------ 后缀域名 ------------------
+youtube.com
+youtu.be
+ytimg.com
+googlevideo.com
+deepmind.google
+generativeai.google
+googleusercontent.com
+googleapis.com
+firebaseio.com
+firebaseapp.com
+firebase.com
+firebaseinstallations.googleapis.com
+firebaseremoteconfig.googleapis.com
+firebaseappcheck.googleapis.com
+firebasedynamiclinks.googleapis.com
+ai.google.dev
+g.co
+googlechrome.com
+chrome.com
+chromeos.dev
+chromium.org
+googlesyndication.com
+googleadservices.com
+googletagmanager.com
+googletagservices.com
+googleoptimize.com
+recaptcha.net
+
+# ------------------ 模糊域名兜底 ------------------
+youtube
+
+# ------------------ 可选 IP 兜底 ------------------
+64.233.160.0/19
+142.250.0.0/15
+
+# ------------------ 可选 USER-AGENT ------------------
+YouTube*   +.google.com
++.gstatic.com
++.googleusercontent.com
++.googleapis.com
++.googlevideo.com
++.youtube.com
++.youtube-nocookie.com
++.ytimg.com
++.youtu.be
++.gmail.com
++.googlemail.com
++.meet.google.com
++.docs.google.com
++.drive.google.com
++.sheets.google.com
++.slides.google.com
++.calendar.google.com
++.scholar.google.com
++.firebaseio.com
++.firebaseapp.com
++.firebase.com
++.notebooklm.googleapis.com
++.notebooklm-pa.googleapis.com
++.firebaseinstallations.googleapis.com
++.firebaseremoteconfig.googleapis.com
++.firebaseappcheck.googleapis.com
++.firebasedynamiclinks.googleapis.com
++.cloudcode-pa.googleapis.com
++.cloudaicompanion.googleapis.com
++.googleflights.com
++.g.co
++.ai.google.dev
++.googlechrome.com
++.chrome.com
++.chromeos.dev
++.chromium.org
++.googlesyndication.com
++.googleadservices.com
++.doubleclick.net
++.googletagmanager.com
++.googletagservices.com
++.googleoptimize.com
++.recaptcha.net
