@@ -104,6 +104,19 @@ payload:
   - DOMAIN-KEYWORD,openaicom-api
 
   # ------------------ 社交相关域名 ------------------
+  - DOMAIN-SUFFIX,t.me
+  - DOMAIN-SUFFIX,tdesktop.com
+  - DOMAIN-SUFFIX,telegra.ph
+  - DOMAIN-SUFFIX,telegram.me
+  - DOMAIN-SUFFIX,telegram.org
+  - DOMAIN-SUFFIX,telegram.space
+  - DOMAIN-SUFFIX,tg.dev
+  - DOMAIN-SUFFIX,tx.me
+  - DOMAIN-KEYWORD,telegram
+  - IP-ASN,44907,no-resolve
+  - IP-ASN,59930,no-resolve
+  - IP-ASN,62014,no-resolve
+  - IP-ASN,62041,no-resolve
   - +.line.me
   - +.linecorp.com
   - +.lin.ee
@@ -161,6 +174,7 @@ payload:
   - USER-AGENT,OpenAI*
   - USER-AGENT,ChatGPT*
   - USER-AGENT,Gemini*
+  - USER-AGENT,Telegram*
   - +.gstatic.com
   - +.googleusercontent.com
   - +.googleapis.com
