@@ -1,0 +1,48 @@
+# ===================================================
+# Google 全家桶 - 通用 YAML (OpenClash/ClashVerge/ClashMi)
+# ===================================================
+
+payload:
+  - DOMAIN-SUFFIX,google.com,Proxy
+  - DOMAIN-SUFFIX,gstatic.com,Proxy
+  - DOMAIN-SUFFIX,googleusercontent.com,Proxy
+  - DOMAIN-SUFFIX,googleapis.com,Proxy
+  - DOMAIN-SUFFIX,googlevideo.com,Proxy
+  - DOMAIN-SUFFIX,youtube.com,Proxy
+  - DOMAIN-SUFFIX,youtube-nocookie.com,Proxy
+  - DOMAIN-SUFFIX,ytimg.com,Proxy
+  - DOMAIN-SUFFIX,youtu.be,Proxy
+  - DOMAIN-SUFFIX,gmail.com,Proxy
+  - DOMAIN-SUFFIX,googlemail.com,Proxy
+  - DOMAIN-SUFFIX,meet.google.com,Proxy
+  - DOMAIN-SUFFIX,docs.google.com,Proxy
+  - DOMAIN-SUFFIX,drive.google.com,Proxy
+  - DOMAIN-SUFFIX,sheets.google.com,Proxy
+  - DOMAIN-SUFFIX,slides.google.com,Proxy
+  - DOMAIN-SUFFIX,calendar.google.com,Proxy
+  - DOMAIN-SUFFIX,scholar.google.com,Proxy
+  - DOMAIN-SUFFIX,firebaseio.com,Proxy
+  - DOMAIN-SUFFIX,firebaseapp.com,Proxy
+  - DOMAIN-SUFFIX,firebase.com,Proxy
+  - DOMAIN-SUFFIX,notebooklm.googleapis.com,Proxy
+  - DOMAIN-SUFFIX,notebooklm-pa.googleapis.com,Proxy
+  - DOMAIN-SUFFIX,firebaseinstallations.googleapis.com,Proxy
+  - DOMAIN-SUFFIX,firebaseremoteconfig.googleapis.com,Proxy
+  - DOMAIN-SUFFIX,firebaseappcheck.googleapis.com,Proxy
+  - DOMAIN-SUFFIX,firebasedynamiclinks.googleapis.com,Proxy
+  - DOMAIN-SUFFIX,cloudcode-pa.googleapis.com,Proxy
+  - DOMAIN-SUFFIX,cloudaicompanion.googleapis.com,Proxy
+  - DOMAIN-SUFFIX,googleflights.com,Proxy
+  - DOMAIN-SUFFIX,g.co,Proxy
+  - DOMAIN-SUFFIX,ai.google.dev,Proxy
+  - DOMAIN-SUFFIX,googlechrome.com,Proxy
+  - DOMAIN-SUFFIX,chrome.com,Proxy
+  - DOMAIN-SUFFIX,chromeos.dev,Proxy
+  - DOMAIN-SUFFIX,chromium.org,Proxy
+  - DOMAIN-SUFFIX,googlesyndication.com,Proxy
+  - DOMAIN-SUFFIX,googleadservices.com,Proxy
+  - DOMAIN-SUFFIX,doubleclick.net,Proxy
+  - DOMAIN-SUFFIX,googletagmanager.com,Proxy
+  - DOMAIN-SUFFIX,googletagservices.com,Proxy
+  - DOMAIN-SUFFIX,googleoptimize.com,Proxy
+  - DOMAIN-SUFFIX,recaptcha.net,Proxy
