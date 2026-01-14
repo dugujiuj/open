@@ -1,34 +1,26 @@
 payload:
-  # ------------------ [新增] Telegram 核心 IP 段 (解决转圈) ------------------
-  - IP-CIDR,91.108.4.0/22,no-resolve
-  - IP-CIDR,91.108.8.0/22,no-resolve
-  - IP-CIDR,91.108.12.0/22,no-resolve
-  - IP-CIDR,91.108.16.0/22,no-resolve
-  - IP-CIDR,91.108.20.0/22,no-resolve
-  - IP-CIDR,91.108.56.0/22,no-resolve
-  - IP-CIDR,149.154.160.0/20,no-resolve
-  - IP-CIDR,95.161.192.0/20,no-resolve
-  - IP-CIDR,185.76.151.0/24,no-resolve
-
-  # ------------------ 精确域名 (保持原样 - 38行) ------------------
+  # ------------------ 1. [精确域名] NotebookLM & Gemini 核心置顶 ------------------
+  - DOMAIN,notebooklm.google
+  - DOMAIN,notebooklm.googleapis.com
+  - DOMAIN,notebooklm-pa.googleapis.com
+  - DOMAIN,gemini.google.com
+  - DOMAIN,ai.studio
+  - DOMAIN,aistudio.google.com
+  - DOMAIN,makersuite.google.com
+  - DOMAIN,generativelanguage.googleapis.com
+  - DOMAIN,proactive.google.com
+  - DOMAIN,alkalimakersuite-pa.clients6.google.com
+  - DOMAIN,alkalimakersuite-pa.googleapis.com
+  - DOMAIN,cloudcode-pa.googleapis.com
+  - DOMAIN,cloudaicompanion.googleapis.com
+  - DOMAIN,proactivebackend-pa.googleapis.com
   - DOMAIN,yt3.googleusercontent.com
   - DOMAIN,youtubei.googleapis.com
   - DOMAIN,youtube-ui.l.google.com
   - DOMAIN,wide-youtube.l.google.com
   - DOMAIN,youtubeembeddedplayer.googleapis.com
   - DOMAIN,youtube-nocookie.com
-  - DOMAIN,notebooklm.google
-  - DOMAIN,notebooklm.googleapis.com
-  - DOMAIN,notebooklm-pa.googleapis.com
-  - DOMAIN,gemini.google.com
-  - DOMAIN,proactive.google.com
-  - DOMAIN,cloudcode-pa.googleapis.com
-  - DOMAIN,cloudaicompanion.googleapis.com
   - DOMAIN,googleflights.com
-  - DOMAIN,proactivebackend-pa.googleapis.com
-  - DOMAIN,alkalimakersuite-pa.clients6.google.com
-  - DOMAIN,alkalimakersuite-pa.googleapis.com
-  - DOMAIN,generativelanguage.googleapis.com
   - DOMAIN,content-storage-upload.googleapis.com
   - DOMAIN,firestore.googleapis.com
   - DOMAIN,speech.googleapis.com
@@ -41,52 +33,18 @@ payload:
   - DOMAIN,feedback-pa.googleapis.com
   - DOMAIN,securetoken.googleapis.com
   - DOMAIN,stun.l.google.com
-  - DOMAIN,ai.studio
-  - DOMAIN,aistudio.google.com
-  - DOMAIN,makersuite.google.com
   - DOMAIN,chat.openai.com.cdn.cloudflare.net
   - DOMAIN,openaicom-api-bdcpf8c6d2e9atf6.z01.azurefd.net
   - DOMAIN,production-openaicom-storage.azureedge.net
   - DOMAIN,turn.livekit.cloud
   - DOMAIN,servd-anthropic-website.b-cdn.net
 
-  # ------------------ ipleak.net (保持原样 - 4行) ------------------
-  - DOMAIN-KEYWORD,ipleak
-  - DOMAIN-KEYWORD,ident
-  - DOMAIN-SUFFIX,ip-api.com
-  - DOMAIN-SUFFIX,browserleaks.com
-
-  # ------------------ 后缀域名 (保持原样 - 41行) ------------------
-  - DOMAIN-SUFFIX,youtube.com
-  - DOMAIN-SUFFIX,youtu.be
-  - DOMAIN-SUFFIX,ytimg.com
-  - DOMAIN-SUFFIX,googlevideo.com
+  # ------------------ 2. [后缀域名] 核心 AI 与 Google 基础 ------------------
   - DOMAIN-SUFFIX,notebooklm.google
   - DOMAIN-SUFFIX,gemini.google
   - DOMAIN-SUFFIX,deepmind.google
   - DOMAIN-SUFFIX,generativeai.google
-  - DOMAIN-SUFFIX,googleusercontent.com
-  - DOMAIN-SUFFIX,googleapis.com
-  - DOMAIN-SUFFIX,firebaseio.com
-  - DOMAIN-SUFFIX,firebaseapp.com
-  - DOMAIN-SUFFIX,firebase.com
-  - DOMAIN-SUFFIX,firebaseinstallations.googleapis.com
-  - DOMAIN-SUFFIX,firebaseremoteconfig.googleapis.com
-  - DOMAIN-SUFFIX,firebaseappcheck.googleapis.com
-  - DOMAIN-SUFFIX,firebasedynamiclinks.googleapis.com
   - DOMAIN-SUFFIX,ai.google.dev
-  - DOMAIN-SUFFIX,g.co
-  - DOMAIN-SUFFIX,googlechrome.com
-  - DOMAIN-SUFFIX,chrome.com
-  - DOMAIN-SUFFIX,chromeos.dev
-  - DOMAIN-SUFFIX,chromium.org
-  - DOMAIN-SUFFIX,googlesyndication.com
-  - DOMAIN-SUFFIX,googleadservices.com
-  - DOMAIN-SUFFIX,googletagmanager.com
-  - DOMAIN-SUFFIX,googletagservices.com
-  - DOMAIN-SUFFIX,googleoptimize.com
-  - DOMAIN-SUFFIX,recaptcha.net
-  - DOMAIN-SUFFIX,aiplatform.googleapis.com
   - DOMAIN-SUFFIX,chatgpt.com
   - DOMAIN-SUFFIX,openai.com
   - DOMAIN-SUFFIX,ai.com
@@ -96,10 +54,44 @@ payload:
   - DOMAIN-SUFFIX,anthropic.com
   - DOMAIN-SUFFIX,claude.ai
   - DOMAIN-SUFFIX,claude.com
-  - DOMAIN-SUFFIX,servd.host
   - DOMAIN-SUFFIX,google.com
-
-  # ------------------ GitHub (保持原样 - 7行) ------------------
+  - DOMAIN-SUFFIX,googleusercontent.com
+  - DOMAIN-SUFFIX,googleapis.com
+  - DOMAIN-SUFFIX,gstatic.com
+  - DOMAIN-SUFFIX,youtube.com
+  - DOMAIN-SUFFIX,youtu.be
+  - DOMAIN-SUFFIX,ytimg.com
+  - DOMAIN-SUFFIX,googlevideo.com
+  - DOMAIN-SUFFIX,youtube-nocookie.com
+  - DOMAIN-SUFFIX,gmail.com
+  - DOMAIN-SUFFIX,googlemail.com
+  - DOMAIN-SUFFIX,meet.google.com
+  - DOMAIN-SUFFIX,docs.google.com
+  - DOMAIN-SUFFIX,drive.google.com
+  - DOMAIN-SUFFIX,sheets.google.com
+  - DOMAIN-SUFFIX,slides.google.com
+  - DOMAIN-SUFFIX,calendar.google.com
+  - DOMAIN-SUFFIX,scholar.google.com
+  - DOMAIN-SUFFIX,firebaseio.com
+  - DOMAIN-SUFFIX,firebaseapp.com
+  - DOMAIN-SUFFIX,firebase.com
+  - DOMAIN-SUFFIX,firebaseinstallations.googleapis.com
+  - DOMAIN-SUFFIX,firebaseremoteconfig.googleapis.com
+  - DOMAIN-SUFFIX,firebaseappcheck.googleapis.com
+  - DOMAIN-SUFFIX,firebasedynamiclinks.googleapis.com
+  - DOMAIN-SUFFIX,g.co
+  - DOMAIN-SUFFIX,googlechrome.com
+  - DOMAIN-SUFFIX,chrome.com
+  - DOMAIN-SUFFIX,chromeos.dev
+  - DOMAIN-SUFFIX,chromium.org
+  - DOMAIN-SUFFIX,googlesyndication.com
+  - DOMAIN-SUFFIX,googleadservices.com
+  - DOMAIN-SUFFIX,doubleclick.net
+  - DOMAIN-SUFFIX,googletagmanager.com
+  - DOMAIN-SUFFIX,googletagservices.com
+  - DOMAIN-SUFFIX,googleoptimize.com
+  - DOMAIN-SUFFIX,recaptcha.net
+  - DOMAIN-SUFFIX,aiplatform.googleapis.com
   - DOMAIN-SUFFIX,github.com
   - DOMAIN-SUFFIX,github.io
   - DOMAIN-SUFFIX,raw.githubusercontent.com
@@ -107,16 +99,21 @@ payload:
   - DOMAIN-SUFFIX,codeload.github.com
   - DOMAIN-SUFFIX,api.github.com
   - DOMAIN-SUFFIX,avatars.githubusercontent.com
+  - DOMAIN-SUFFIX,ip-api.com
+  - DOMAIN-SUFFIX,browserleaks.com
+  - DOMAIN-SUFFIX,servd.host
 
-  # ------------------ 模糊域名兜底 (保持原样 - 6行) ------------------
-  - DOMAIN-KEYWORD,youtube
+  # ------------------ 3. [模糊域名] 兜底匹配 ------------------
   - DOMAIN-KEYWORD,notebooklm
+  - DOMAIN-KEYWORD,openai
+  - DOMAIN-KEYWORD,youtube
   - DOMAIN-KEYWORD,colab
   - DOMAIN-KEYWORD,generativelanguage
-  - DOMAIN-KEYWORD,openai
   - DOMAIN-KEYWORD,openaicom-api
+  - DOMAIN-KEYWORD,ipleak
+  - DOMAIN-KEYWORD,ident
 
-  # ------------------ 社交与 Telegram (保持原样 - 67行) ------------------
+  # ------------------ 4. [社交相关] 分流层 ------------------
   - DOMAIN-SUFFIX,t.me
   - DOMAIN-SUFFIX,tdesktop.com
   - DOMAIN-SUFFIX,telegra.ph
@@ -126,19 +123,6 @@ payload:
   - DOMAIN-SUFFIX,tg.dev
   - DOMAIN-SUFFIX,tx.me
   - DOMAIN-KEYWORD,telegram
-  - IP-ASN,44907,no-resolve
-  - IP-ASN,59930,no-resolve
-  - IP-ASN,62014,no-resolve
-  - IP-ASN,62041,no-resolve
-  - DOMAIN-SUFFIX,line.me
-  - DOMAIN-SUFFIX,linecorp.com
-  - DOMAIN-SUFFIX,lin.ee
-  - DOMAIN-SUFFIX,linefriends.com
-  - DOMAIN-SUFFIX,linetv.tw
-  - DOMAIN-SUFFIX,linegame.jp
-  - DOMAIN-SUFFIX,line-scdn.net
-  - DOMAIN-SUFFIX,line-cdn.net
-  - DOMAIN-SUFFIX,line-apps.com
   - DOMAIN-SUFFIX,facebook.com
   - DOMAIN-SUFFIX,fb.com
   - DOMAIN-SUFFIX,fbcdn.net
@@ -177,57 +161,37 @@ payload:
   - DOMAIN-SUFFIX,misskey.cloud
   - DOMAIN-SUFFIX,misskey.design
   - DOMAIN-SUFFIX,misskey.flowers
+  - DOMAIN-SUFFIX,line.me
+  - DOMAIN-SUFFIX,linecorp.com
+  - DOMAIN-SUFFIX,lin.ee
+  - DOMAIN-SUFFIX,linefriends.com
+  - DOMAIN-SUFFIX,linetv.tw
+  - DOMAIN-SUFFIX,linegame.jp
+  - DOMAIN-SUFFIX,line-scdn.net
+  - DOMAIN-SUFFIX,line-cdn.net
+  - DOMAIN-SUFFIX,line-apps.com
 
-  # ------------------ IP 兜底 (保持原样 - 2行) ------------------
+  # ------------------ 5. [IP 兜底] 处理 IP 级别匹配 (Telegram 核心) ------------------
+  - IP-CIDR,91.108.4.0/22,no-resolve
+  - IP-CIDR,91.108.8.0/22,no-resolve
+  - IP-CIDR,91.108.12.0/22,no-resolve
+  - IP-CIDR,91.108.16.0/22,no-resolve
+  - IP-CIDR,91.108.20.0/22,no-resolve
+  - IP-CIDR,91.108.56.0/22,no-resolve
+  - IP-CIDR,149.154.160.0/20,no-resolve
+  - IP-CIDR,95.161.192.0/20,no-resolve
+  - IP-CIDR,185.76.151.0/24,no-resolve
+  - IP-ASN,44907,no-resolve
+  - IP-ASN,59930,no-resolve
+  - IP-ASN,62014,no-resolve
+  - IP-ASN,62041,no-resolve
   - IP-CIDR,64.233.160.0/19,no-resolve
   - IP-CIDR,142.250.0.0/15,no-resolve
 
-  # ------------------ 指纹与全量 Google 修正 (保持原样 - 43行) ------------------
-  - USER-AGENT,YouTube*
+  # ------------------ 6. [User-Agent] 客户端指纹 ------------------
+  - USER-AGENT,NotebookLM*
+  - USER-AGENT,Gemini*
   - USER-AGENT,OpenAI*
   - USER-AGENT,ChatGPT*
-  - USER-AGENT,Gemini*
+  - USER-AGENT,YouTube*
   - USER-AGENT,Telegram*
-  - USER-AGENT,NotebookLM*
-  - DOMAIN-SUFFIX,gstatic.com
-  - DOMAIN-SUFFIX,googleusercontent.com
-  - DOMAIN-SUFFIX,googleapis.com
-  - DOMAIN-SUFFIX,googlevideo.com
-  - DOMAIN-SUFFIX,youtube.com
-  - DOMAIN-SUFFIX,youtube-nocookie.com
-  - DOMAIN-SUFFIX,ytimg.com
-  - DOMAIN-SUFFIX,youtu.be
-  - DOMAIN-SUFFIX,gmail.com
-  - DOMAIN-SUFFIX,googlemail.com
-  - DOMAIN-SUFFIX,meet.google.com
-  - DOMAIN-SUFFIX,docs.google.com
-  - DOMAIN-SUFFIX,drive.google.com
-  - DOMAIN-SUFFIX,sheets.google.com
-  - DOMAIN-SUFFIX,slides.google.com
-  - DOMAIN-SUFFIX,calendar.google.com
-  - DOMAIN-SUFFIX,scholar.google.com
-  - DOMAIN-SUFFIX,firebaseio.com
-  - DOMAIN-SUFFIX,firebaseapp.com
-  - DOMAIN-SUFFIX,firebase.com
-  - DOMAIN-SUFFIX,notebooklm.googleapis.com
-  - DOMAIN-SUFFIX,notebooklm-pa.googleapis.com
-  - DOMAIN-SUFFIX,firebaseinstallations.googleapis.com
-  - DOMAIN-SUFFIX,firebaseremoteconfig.googleapis.com
-  - DOMAIN-SUFFIX,firebaseappcheck.googleapis.com
-  - DOMAIN-SUFFIX,firebasedynamiclinks.googleapis.com
-  - DOMAIN-SUFFIX,cloudcode-pa.googleapis.com
-  - DOMAIN-SUFFIX,cloudaicompanion.googleapis.com
-  - DOMAIN-SUFFIX,googleflights.com
-  - DOMAIN-SUFFIX,g.co
-  - DOMAIN-SUFFIX,ai.google.dev
-  - DOMAIN-SUFFIX,googlechrome.com
-  - DOMAIN-SUFFIX,chrome.com
-  - DOMAIN-SUFFIX,chromeos.dev
-  - DOMAIN-SUFFIX,chromium.org
-  - DOMAIN-SUFFIX,googlesyndication.com
-  - DOMAIN-SUFFIX,googleadservices.com
-  - DOMAIN-SUFFIX,doubleclick.net
-  - DOMAIN-SUFFIX,googletagmanager.com
-  - DOMAIN-SUFFIX,googletagservices.com
-  - DOMAIN-SUFFIX,googleoptimize.com
-  - DOMAIN-SUFFIX,recaptcha.net
