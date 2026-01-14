@@ -1,5 +1,16 @@
 payload:
-  # ------------------ 精确域名 (保持原样) ------------------
+  # ------------------ [新增] Telegram 核心 IP 段 (解决转圈) ------------------
+  - IP-CIDR,91.108.4.0/22,no-resolve
+  - IP-CIDR,91.108.8.0/22,no-resolve
+  - IP-CIDR,91.108.12.0/22,no-resolve
+  - IP-CIDR,91.108.16.0/22,no-resolve
+  - IP-CIDR,91.108.20.0/22,no-resolve
+  - IP-CIDR,91.108.56.0/22,no-resolve
+  - IP-CIDR,149.154.160.0/20,no-resolve
+  - IP-CIDR,95.161.192.0/20,no-resolve
+  - IP-CIDR,185.76.151.0/24,no-resolve
+
+  # ------------------ 精确域名 (保持原样 - 38行) ------------------
   - DOMAIN,yt3.googleusercontent.com
   - DOMAIN,youtubei.googleapis.com
   - DOMAIN,youtube-ui.l.google.com
@@ -39,13 +50,13 @@ payload:
   - DOMAIN,turn.livekit.cloud
   - DOMAIN,servd-anthropic-website.b-cdn.net
 
-  # ------------------ ipleak.net (保持原样) ------------------
+  # ------------------ ipleak.net (保持原样 - 4行) ------------------
   - DOMAIN-KEYWORD,ipleak
   - DOMAIN-KEYWORD,ident
   - DOMAIN-SUFFIX,ip-api.com
   - DOMAIN-SUFFIX,browserleaks.com
 
-  # ------------------ 后缀域名 (保持原样) ------------------
+  # ------------------ 后缀域名 (保持原样 - 41行) ------------------
   - DOMAIN-SUFFIX,youtube.com
   - DOMAIN-SUFFIX,youtu.be
   - DOMAIN-SUFFIX,ytimg.com
@@ -88,7 +99,7 @@ payload:
   - DOMAIN-SUFFIX,servd.host
   - DOMAIN-SUFFIX,google.com
 
-  # ------------------ GitHub (保持原样) ------------------
+  # ------------------ GitHub (保持原样 - 7行) ------------------
   - DOMAIN-SUFFIX,github.com
   - DOMAIN-SUFFIX,github.io
   - DOMAIN-SUFFIX,raw.githubusercontent.com
@@ -97,7 +108,7 @@ payload:
   - DOMAIN-SUFFIX,api.github.com
   - DOMAIN-SUFFIX,avatars.githubusercontent.com
 
-  # ------------------ 模糊域名兜底 (保持原样) ------------------
+  # ------------------ 模糊域名兜底 (保持原样 - 6行) ------------------
   - DOMAIN-KEYWORD,youtube
   - DOMAIN-KEYWORD,notebooklm
   - DOMAIN-KEYWORD,colab
@@ -105,7 +116,7 @@ payload:
   - DOMAIN-KEYWORD,openai
   - DOMAIN-KEYWORD,openaicom-api
 
-  # ------------------ 社交与 Telegram (完整无损版) ------------------
+  # ------------------ 社交与 Telegram (保持原样 - 67行) ------------------
   - DOMAIN-SUFFIX,t.me
   - DOMAIN-SUFFIX,tdesktop.com
   - DOMAIN-SUFFIX,telegra.ph
@@ -167,11 +178,11 @@ payload:
   - DOMAIN-SUFFIX,misskey.design
   - DOMAIN-SUFFIX,misskey.flowers
 
-  # ------------------ IP 兜底 (保持原样) ------------------
+  # ------------------ IP 兜底 (保持原样 - 2行) ------------------
   - IP-CIDR,64.233.160.0/19,no-resolve
   - IP-CIDR,142.250.0.0/15,no-resolve
 
-  # ------------------ 指纹与全量 Google 修正 ------------------
+  # ------------------ 指纹与全量 Google 修正 (保持原样 - 43行) ------------------
   - USER-AGENT,YouTube*
   - USER-AGENT,OpenAI*
   - USER-AGENT,ChatGPT*
