@@ -81,6 +81,14 @@ payload:
   - DOMAIN-SUFFIX,claude.com
   - DOMAIN-SUFFIX,servd.host
   - DOMAIN-SUFFIX,google.com
+  # ------------------ GitHub ------------------
+  - DOMAIN-SUFFIX,github.com
+  - DOMAIN-SUFFIX,github.io
+  - DOMAIN-SUFFIX,raw.githubusercontent.com
+  - DOMAIN-SUFFIX,gist.github.com
+  - DOMAIN-SUFFIX,codeload.github.com
+  - DOMAIN-SUFFIX,api.github.com
+  - DOMAIN-SUFFIX,avatars.githubusercontent.com
 
   # ------------------ 模糊域名兜底 ------------------
   - DOMAIN-KEYWORD,youtube
