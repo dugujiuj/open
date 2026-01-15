@@ -6,16 +6,13 @@ DOMAIN-SUFFIX,notebooklm.google
 DOMAIN-SUFFIX,notebooklm.google.com
 DOMAIN-SUFFIX,aistudio.google.com
 DOMAIN-SUFFIX,makersuite.google.com
-DOMAIN,ai.google.dev
+DOMAIN-SUFFIX,ai.google.dev
 DOMAIN-SUFFIX,generativeai.google
 DOMAIN-SUFFIX,generativelanguage.googleapis.com
 DOMAIN-SUFFIX,aida.googleapis.com
 DOMAIN-SUFFIX,jules.google
-DOMAIN-SUFFIX,jules.google.com
 DOMAIN-SUFFIX,opal.google
-DOMAIN-SUFFIX,opal.google.com
 DOMAIN-SUFFIX,labs.google
-DOMAIN-SUFFIX,labs.google.com
 DOMAIN-SUFFIX,ai.studio
 DOMAIN-SUFFIX,gstatic.com
 DOMAIN-SUFFIX,googleusercontent.com
@@ -31,9 +28,7 @@ DOMAIN,cloudaicompanion.googleapis.com
 DOMAIN,cloudcode-pa.googleapis.com
 DOMAIN,daily-cloudcode-pa.googleapis.com
 DOMAIN,notebooklm-pa.googleapis.com
-DOMAIN,notebooklm.googleapis.com
 DOMAIN,antigravity-pa.googleapis.com
-DOMAIN,antigravity.googleapis.com
 DOMAIN-SUFFIX,antigravity-unleash.goog
 DOMAIN-SUFFIX,robinfrontend-pa.googleapis.com
 DOMAIN-SUFFIX,geller-pa.googleapis.com
@@ -41,11 +36,13 @@ DOMAIN-SUFFIX,aisandbox-pa.googleapis.com
 
 # --- r-version (Microsoft Copilot / Bing 系) ---
 DOMAIN-SUFFIX,copilot.microsoft.com
+DOMAIN-SUFFIX,copilot.cloud.microsoft.com
 DOMAIN-SUFFIX,bing.com
 DOMAIN-SUFFIX,bing.net
 DOMAIN-SUFFIX,bingapis.com
 DOMAIN-SUFFIX,sydney.bing.com
 DOMAIN-SUFFIX,edgeservices.bing.com
+DOMAIN-SUFFIX,edge.microsoft.com
 DOMAIN-SUFFIX,vortex.data.microsoft.com
 DOMAIN-SUFFIX,location.microsoft.com
 DOMAIN,browser-intake-datadoghq.com
@@ -71,8 +68,16 @@ DOMAIN-SUFFIX,mistral.ai
 DOMAIN-SUFFIX,cohere.ai
 DOMAIN-SUFFIX,meta.ai
 DOMAIN-SUFFIX,deepmind.com
+DOMAIN-SUFFIX,stability.ai
+DOMAIN-SUFFIX,dreamstudio.ai
+DOMAIN-SUFFIX,midjourney.com
+DOMAIN-SUFFIX,discord.com
 
-# --- AI 编程工具 ---
+# --- AI 视频/编程/Agent ---
+DOMAIN-SUFFIX,runwayml.com
+DOMAIN-SUFFIX,runway.com
+DOMAIN-SUFFIX,leonardo.ai
+DOMAIN-SUFFIX,pika.art
 DOMAIN-SUFFIX,cursor.com
 DOMAIN-SUFFIX,cursor.sh
 DOMAIN-SUFFIX,cursorapi.com
@@ -84,17 +89,21 @@ DOMAIN-SUFFIX,cici.com
 DOMAIN-SUFFIX,ciciai.com
 DOMAIN-SUFFIX,ciciaicdn.com
 
-# --- 基础设施与补丁 ---
+# --- 基础设施与算力 ---
 DOMAIN-SUFFIX,huggingface.co
 DOMAIN-SUFFIX,hf.co
+DOMAIN-SUFFIX,hf.space
 DOMAIN-SUFFIX,poe.com
 DOMAIN-SUFFIX,elevenlabs.io
 DOMAIN-SUFFIX,groq.com
+DOMAIN-SUFFIX,cerebras.ai
+DOMAIN-SUFFIX,replicate.com
+DOMAIN-SUFFIX,replicate.delivery
+DOMAIN-SUFFIX,modal.com
 DOMAIN-SUFFIX,comfy.org
-DOMAIN-SUFFIX,livekit.cloud
+DOMAIN-SUFFIX,turn.livekit.cloud
 DOMAIN-SUFFIX,gateway.ai.cloudflare.com
 DOMAIN,o33249.ingest.sentry.io
 DOMAIN,openaicom-api-bdcpf8c6d2e9atf6.z01.azurefd.net
 DOMAIN,production-openaicom-storage.azureedge.net
-DOMAIN-SUFFIX,claudemcpclient.com
 DOMAIN,servd-anthropic-website.b-cdn.net
