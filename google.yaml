@@ -1,50 +1,49 @@
 # ===================================================
-# Google 全家桶 - 通用 YAML (已修正语法及补全服务)
+# Google 专项 - 2026 满血修正版 (不含 YouTube / AI)
+# 适用于：将 Google 搜索/办公与 YouTube 分开代理的场景
 # ===================================================
 
 payload:
+  # --- 1. Google 核心基础服务 ---
   - +.google.com
   - +.gstatic.com
   - +.googleusercontent.com
   - +.googleapis.com
-  - +.googlevideo.com
-  - +.youtube.com
-  - +.youtube-nocookie.com
-  - +.ytimg.com
-  - +.youtu.be
+  - +.g.co
+  - +.recaptcha.net
+
+  # --- 2. Google Maps 满血特化 ---
+  - +.maps.google.com   # 地图主站核心入口
+  - +.ggpht.com                                        # 街景与地点照片
+  - +.earth.google.com                                 # Google Earth
+
+  # --- 3. 硬件、商店与支付 ---
+  - +.store.google.com
+  - +.pay.google.com
+  - +.play.google.com
+
+  # --- 4. 生产力、教育与协作 ---
   - +.gmail.com
   - +.googlemail.com
-  - +.meet.google.com
-  - +.docs.google.com
   - +.drive.google.com
+  - +.docs.google.com
   - +.sheets.google.com
   - +.slides.google.com
   - +.calendar.google.com
+  - +.classroom.google.com
+
+  # --- 5. 科研、翻译与云服务 ---
   - +.scholar.google.com
-  - +.firebaseio.com
-  - +.firebaseapp.com
-  - +.firebase.com
-  - +.firebaseinstallations.googleapis.com
-  - +.firebaseremoteconfig.googleapis.com
-  - +.firebaseappcheck.googleapis.com
-  - +.firebasedynamiclinks.googleapis.com
-  - +.googleflights.com
-  - +.g.co
-  - +.googlechrome.com
-  - +.chrome.com
-  - +.chromeos.dev
-  - +.chromium.org
-  - +.googlesyndication.com
-  - +.googleadservices.com
-  - +.doubleclick.net
-  - +.googletagmanager.com
-  - +.googletagservices.com
-  - +.googleoptimize.com
-  - +.recaptcha.net
-  # --- 补充建议 (确保 Meet 和地图顺畅) ---
-  - +.pki.goog
-  - +.play.google.com
-  - +.android.com
+  - +.books.google.com
+  - +.news.google.com
   - +.one.google.com
   - +.keep.google.com
   - +.translate.google.com
+
+  # --- 6. 系统、会议与开发 ---
+  - +.android.com
+  - +.pki.goog                 # Google Meet 验证
+  - +.chrome.com
+  - +.googlechrome.com
+  - +.firebaseio.com
+  - +.doubleclick.net
