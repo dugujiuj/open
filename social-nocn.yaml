@@ -1,61 +1,57 @@
+# ===================================================
+# 社交 & 通讯全平台聚合 - 终极增强版
+# 包含：IM通讯、主流社媒、内容社区、二次元社区
+# ===================================================
+
 payload:
-  # ---------------- Line ----------------
+  # ---------------- 即时通讯 (WhatsApp / Telegram / Line) ----------------
+  - +.whatsapp.com
+  - +.whatsapp.net
+  - +.telegram.org
+  - +.t.me
+  - +.tdesktop.com
+  - +.telegra.ph
+  - +.telegram.me
   - +.line.me
   - +.linecorp.com
   - +.lin.ee
-  - +.linefriends.com
-  - +.linetv.tw
-  - +.linegame.jp
   - +.line-scdn.net
-  - +.line-cdn.net
-  - +.line-apps.com
 
-  # ---------------- Facebook / Instagram ----------------
-  - +.facebook.com
-  - +.fb.com
-  - +.fbcdn.net
-  - +.fbcdn.com
-  - +.fbwatch.com
-  - +.instagram.com
-  - +.cdninstagram.com
-  - +.instagramcdn.com
-  - +.graph.instagram.com
-  - +.graph-fallback.instagram.com
+  # ---------------- 内容社区 (Reddit / Pinterest / Snapchat) ----------------
+  - +.reddit.com
+  - +.redd.it
+  - +.redditmedia.com
+  - +.redditstatic.com
+  - +.pinterest.com
+  - +.pinimg.com
+  - +.snapchat.com
+  - +.sc-cdn.net
 
-  # ---------------- Twitter / X ----------------
+  # ---------------- X (Twitter) & X.com ----------------
+  - +.x.com
   - +.twitter.com
   - +.t.co
   - +.twimg.com
-  - +.twttr.com
-  - +.twitpic.com
-  - +.periscope.tv
-  - +.pscp.tv
 
-  # ---------------- LinkedIn ----------------
+  # ---------------- Meta 家族 (FB / IG / Threads / Messenger) ----------------
+  - +.facebook.com
+  - +.fb.com
+  - +.fbcdn.net
+  - +.fbsbx.com
+  - +.messenger.com
+  - +.instagram.com
+  - +.cdninstagram.com
+  - +.threads.net
+
+  # ---------------- 职场与俄区 (LinkedIn / VK) ----------------
   - +.linkedin.com
   - +.licdn.com
-  - +.linkedin.cn
-  - +.linkedin.at
   - +.lnkd.in
-
-  # ---------------- VK / VK Messenger / Vkontakte ----------------
   - +.vk.com
   - +.vk.me
-  - +.vklive.app
-  - +.vkmessenger.app
   - +.vkcdn.net
-  - +.vkcdn.me
-  - +.vkcloud-static.ru
 
-  # ---------------- Threads ----------------
-  - +.threads.net
-  - +.threads.com
-
-  # ---------------- Misskey ----------------
+  # ---------------- Misskey & 去中心化 ----------------
   - +.misskey.io
   - +.misskeyusercontent.jp
-  - +.misskey.stream
   - +.misskey.art
-  - +.misskey.cloud
-  - +.misskey.design
-  - +.misskey.flowers
