@@ -7,92 +7,104 @@ payload:
   - +.notebooklm.google.com
   - +.aistudio.google.com # [Google AI Studio]
   - +.makersuite.google.com
-  - ai.google.dev
+  - +.ai.google.dev
   - +.generativeai.google
   - +.generativelanguage.googleapis.com
-  - +.aida.googleapis.com # [Google AI Components]
+  - +.aida.googleapis.com
   - +.jules.google
-  - +.jules.google.com
   - +.opal.google
-  - +.opal.google.com
   - +.labs.google
-  - +.labs.google.com
   - +.ai.studio
-  - +.gstatic.com # [关键] AI 界面样式加载
-  - +.googleusercontent.com # [关键] Google AI 资源
-  - +.googleapis.com # [关键] Google API 全局
-  - +.recaptcha.net # [补齐] AI 登录验证码
+  - +.gstatic.com # [关键] 界面加载补丁
+  - +.googleusercontent.com # [关键] 附件资源
+  - +.googleapis.com # [核心] API 转发
+  - +.recaptcha.net # [关键] 验证码补丁
   - +.deepmind.google
-  - alkalicore-pa.clients6.google.com
-  - alkalimakersuite-pa.clients6.google.com
-  - webchannel-alkalimakersuite-pa.clients6.google.com
-  - cloudaicompanion.googleapis.com
-  - cloudcode-pa.googleapis.com
-  - daily-cloudcode-pa.googleapis.com
-  - notebooklm-pa.googleapis.com
-  - notebooklm.googleapis.com
-  - antigravity-pa.googleapis.com
-  - antigravity.googleapis.com
-  - +.antigravity-unleash.goog
   - +.antigravity.google
+  - +.proactivebackend-pa.googleapis.com
+  - +.alkalicore-pa.clients6.google.com
+  - +.alkalimakersuite-pa.clients6.google.com
+  - +.webchannel-alkalimakersuite-pa.clients6.google.com
+  - +.cloudaicompanion.googleapis.com
+  - +.cloudcode-pa.googleapis.com
+  - +.daily-cloudcode-pa.googleapis.com
+  - +.notebooklm-pa.googleapis.com
+  - +.antigravity-pa.googleapis.com
+  - +.antigravity-unleash.goog
   - +.robinfrontend-pa.googleapis.com
   - +.geller-pa.googleapis.com
   - +.aisandbox-pa.googleapis.com
-  - +.proactivebackend-pa.googleapis.com
 
   # --- r-version (Microsoft Copilot / Bing 系) ---
   - +.copilot.microsoft.com # [Microsoft Copilot]
+  - +.copilot.cloud.microsoft.com
   - +.bing.com
   - +.bing.net
   - +.bingapis.com
-  - +.sydney.bing.com # [Copilot Core & Anti-Detection]
+  - +.sydney.bing.com # [核心] 聊天链路
   - +.edgeservices.bing.com
-  - +.vortex.data.microsoft.com
-  - +.location.microsoft.com
-  - browser-intake-datadoghq.com
+  - +.edge.microsoft.com
+  - +.vortex.data.microsoft.com # [关键] 防浙江 IP 检测
+  - +.location.microsoft.com # [关键] 防浙江 IP 检测
+  - +.browser-intake-datadoghq.com
 
   # --- OpenAI & 其他大模型 ---
-  - +.openai.com # [OpenAI / ChatGPT]
+  - +.openai.com # [包含 chat, api, platform]
   - +.chatgpt.com
   - +.oaistatic.com
   - +.oaiusercontent.com
   - +.chat.com
   - +.sora.com
-  - +.claude.ai # [Claude / Anthropic]
+  - +.claude.ai
   - +.claude.com
   - +.claudeusercontent.com
   - +.anthropic.com
-  - +.perplexity.ai # [Perplexity AI]
+  - +.perplexity.ai
   - +.perplexity.com
   - +.pplx.ai
-  - +.grok.com # [xAI / Grok]
+  - +.grok.com
   - +.x.ai
   - +.grok.x.com
   - +.mistral.ai
   - +.cohere.ai
   - +.meta.ai
+  - +.deepmind.com
+  - +.stability.ai
+  - +.dreamstudio.ai
+  - +.midjourney.com
+  - +.discord.com # [Midjourney 必备]
 
-  # --- AI 编程工具 (Cursor/Trae 等) ---
-  - +.cursor.com # [Cursor]
+  # --- AI 视频/编程/Agent ---
+  - +.runwayml.com
+  - +.runway.com
+  - +.leonardo.ai
+  - +.pika.art
+  - +.cursor.com
   - +.cursor.sh
-  - +.cursorapi.com
-  - +.cursor-cdn.com
-  - +.trae.ai # [Trae]
-  - +.marscode.com # [MarsCode]
-  - +.coze.com # [Coze / Cici]
+  - +.cursorapi.com # [Cursor 核心 API]
+  - +.cursor-cdn.com # [Cursor 静态资源]
+  - +.trae.ai
+  - +.marscode.com
+  - +.coze.com
   - +.cici.com
   - +.ciciai.com
   - +.ciciaicdn.com
 
-  # --- 基础设施与补丁 ---
-  - +.huggingface.co # [Hugging Face]
+  # --- 基础设施与算力 ---
+  - +.huggingface.co
   - +.hf.co
-  - +.poe.com # [Poe]
-  - +.elevenlabs.io # [ElevenLabs]
-  - +.groq.com # [Groq]
-  - +.comfy.org # [ComfyUI]
-  - +.turn.livekit.cloud # [Livekit]
+  - +.hf.space
+  - +.poe.com
+  - +.elevenlabs.io
+  - +.groq.com
+  - +.cerebras.ai
+  - +.replicate.com
+  - +.replicate.delivery
+  - +.modal.com
+  - +.comfy.org
+  - +.turn.livekit.cloud
   - +.gateway.ai.cloudflare.com
-  - o33249.ingest.sentry.io
-  - openaicom-api-bdcpf8c6d2e9atf6.z01.azurefd.net
-  - production-openaicom-storage.azureedge.net
+  - +.o33249.ingest.sentry.io
+  - +.openaicom-api-bdcpf8c6d2e9atf6.z01.azurefd.net
+  - +.production-openaicom-storage.azureedge.net
+  - +.servd-anthropic-website.b-cdn.net
