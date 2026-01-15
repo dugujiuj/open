@@ -1,32 +1,37 @@
+# ===================================================
+# YouTube & Google 终极聚合 - 2026 最终封笔版
+# 包含：YouTube, 办公, 教育, 商店, 地图, 硬件, 翻译, 学术
+# ===================================================
+
 payload:
-  # --- 1. YouTube 核心与流媒体 (建议走高速节点) ---
+  # --- 1. YouTube 官方全链路 ---
   - +.youtube.com
   - +.youtu.be
-  - +.ytimg.com
   - +.googlevideo.com
+  - +.ytimg.com
   - +.youtubei.googleapis.com
   - +.youtube-nocookie.com
-  - +.youtubeeducation.com
-  - +.youtubekids.com
-  - +.wide-youtube.l.google.com
   - +.yt3.googleusercontent.com
 
-  # --- 2. Google 基础与 Android 生态 ---
+  # --- 2. Google 核心基础服务 ---
   - +.google.com
-  - +.play.google.com     # [补全] Play 商店下载更新
-  - +.android.com          # [补全] 安卓系统相关
-  - +.g.co
-  - +.gstatic.com          # [关键] 界面资源加载
-  - +.googleapis.com       # [核心] API 信令交换
+  - +.gstatic.com
   - +.googleusercontent.com
-  - +.recaptcha.net        # [关键] 验证码
+  - +.googleapis.com
+  - +.g.co
+  - +.recaptcha.net
 
-  # --- 3. Google Meet & 实时通讯 (重点增强) ---
-  - +.meet.google.com
-  - +.apis.google.com      # [补全] Meet 协作信令
-  - +.pki.goog             # [关键] 加密证书验证，不通会导致会议连不上
+  # --- 3. 硬件、商店与支付 (新增补强) ---
+  - +.store.google.com          # [新增] Pixel/Nest 硬件商店
+  - +.pay.google.com            # Google Pay 支付链路
+  - +.play.google.com           # Play 商店
 
-  # --- 4. 生产力、地图与云端存储 ---
+  # --- 4. Google Maps 满血特化 (Copilot 推荐) ---
+  - +.maps.google.com   # 地图主站核心入口
+  - +.ggpht.com                                        # 街景与地点照片
+  - +.earth.google.com                                 # Google Earth
+
+  # --- 5. 生产力、教育与协作 ---
   - +.gmail.com
   - +.googlemail.com
   - +.drive.google.com
@@ -34,20 +39,20 @@ payload:
   - +.sheets.google.com
   - +.slides.google.com
   - +.calendar.google.com
-  - +.translate.google.com   # [补全] 浏览器原生翻译
-  - +.news.google.com
-  - +.books.google.com
-  - +.scholar.google.com
-  - +.earth.google.com      # [补全] 谷歌地球
-  - +.one.google.com        # [补全] Google One 存储管理
-  - +.keep.google.com       # [补全] 笔记同步
   - +.classroom.google.com
 
-  # --- 5. 浏览器、开发与广告拦截补丁 ---
-  - +.firebaseio.com
-  - +.firebaseapp.com
-  - +.firebase.com
-  - +.googlechrome.com
+  # --- 6. 科研、翻译与云服务 ---
+  - +.scholar.google.com
+  - +.books.google.com
+  - +.news.google.com
+  - +.one.google.com
+  - +.keep.google.com
+  - +.translate.google.com
+
+  # --- 7. 系统、会议与开发 ---
+  - +.android.com
+  - +.pki.goog                 # Google Meet 验证
   - +.chrome.com
+  - +.googlechrome.com
+  - +.firebaseio.com
   - +.doubleclick.net
-  - +.googleflights.com
