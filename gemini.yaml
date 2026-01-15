@@ -1,0 +1,55 @@
+# ===================================================
+# Gemini (Google AI) 专项 - 满血终极版
+# 包含：Gemini, NotebookLM, AI Studio, Docs AI, Research
+# ===================================================
+
+payload:
+  # --- 1. 核心入口与 Web 界面 ---
+  - +.gemini.google
+  - +.gemini.google.com
+  - +.bard.google.com
+  - +.aistudio.google.com
+  - +.makersuite.google.com
+  - +.ai.studio
+  - +.labs.google
+  - +.labs.google.com
+  - +.ai.google.com            # [新增] 实验性入口兜底
+
+  # --- 2. NotebookLM 与文档集成 ---
+  - +.notebooklm.google
+  - +.notebooklm.google.com
+  - +.notebooklm.googleapis.com
+  - +.notebooklm-pa.googleapis.com
+  - +.docs.cloud.google.com    # [新增] Gemini/NotebookLM 集成
+
+  # --- 3. Google Research (科研与模型演示) ---
+  - +.research.google          # [新增]
+  - +.research.google.com      # [新增]
+
+  # --- 4. 研发代号 (Opal/Jules/Deepmind/Antigravity) ---
+  - +.deepmind.google
+  - +.deepmind.com
+  - +.antigravity.google
+  - +.antigravity.googleapis.com
+  - +.antigravity-pa.googleapis.com
+  - +.antigravity-unleash.goog
+  - +.jules.google
+  - +.jules.google.com
+  - +.opal.google
+  - +.opal.google.com
+
+  # --- 5. 后端 API 与 开发者平台 ---
+  - +.ai.google.dev
+  - +.generativeai.google
+  - +.generativelanguage.googleapis.com
+  - +.proactivebackend-pa.googleapis.com
+  - +.aida.googleapis.com
+  - +.aisandbox-pa.googleapis.com
+  - +.geller-pa.googleapis.com
+  - +.robinfrontend-pa.googleapis.com
+  - +.alkalicore-pa.clients6.google.com
+  - +.alkalimakersuite-pa.clients6.google.com
+  - +.webchannel-alkalimakersuite-pa.clients6.google.com
+  - +.cloudaicompanion.googleapis.com
+  - +.cloudcode-pa.googleapis.com
+  - +.daily-cloudcode-pa.googleapis.com
