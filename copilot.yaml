@@ -1,0 +1,12 @@
+# GitHub 远程规则文件必须以 payload 开头
+payload:
+  - DOMAIN-KEYWORD,copilot
+  - DOMAIN-SUFFIX,copilot.microsoft.com
+  - DOMAIN-SUFFIX,bing.com
+  - DOMAIN-SUFFIX,bing.net
+  - DOMAIN-SUFFIX,bingapis.com
+  - DOMAIN-SUFFIX,sydney.bing.com
+  - DOMAIN-SUFFIX,edgeservices.bing.com
+  - DOMAIN,browser.pipe.aria.microsoft.com
+  - DOMAIN-SUFFIX,vortex.data.microsoft.com
+  - DOMAIN-SUFFIX,location.microsoft.com
