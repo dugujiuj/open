@@ -1,47 +1,53 @@
 payload:
-  # ------------------ 1. [DOMAIN] 精确域名 ------------------
-  - DOMAIN,yt3.googleusercontent.com
-  - DOMAIN,youtubei.googleapis.com
-  - DOMAIN,youtube-ui.l.google.com
-  - DOMAIN,wide-youtube.l.google.com
-  - DOMAIN,youtubeembeddedplayer.googleapis.com
-  - DOMAIN,youtube-nocookie.com
-  - DOMAIN,googleflights.com
-  - DOMAIN,proactive.google.com
+  # --- 1. YouTube 核心与流媒体 (建议走高速节点) ---
+  - +.youtube.com
+  - +.youtu.be
+  - +.ytimg.com
+  - +.googlevideo.com
+  - +.youtubei.googleapis.com
+  - +.youtube-nocookie.com
+  - +.youtubeeducation.com
+  - +.youtubekids.com
+  - +.wide-youtube.l.google.com
+  - +.yt3.googleusercontent.com
 
-  # ------------------ 2. [DOMAIN-SUFFIX] 后缀域名 ------------------
-  - DOMAIN-SUFFIX,youtube.com
-  - DOMAIN-SUFFIX,youtu.be
-  - DOMAIN-SUFFIX,ytimg.com
-  - DOMAIN-SUFFIX,googlevideo.com
-  - DOMAIN-SUFFIX,google.com
-  - DOMAIN-SUFFIX,gstatic.com
-  - DOMAIN-SUFFIX,googleusercontent.com
-  - DOMAIN-SUFFIX,googleapis.com
-  - DOMAIN-SUFFIX,g.co
-  - DOMAIN-SUFFIX,gmail.com
-  - DOMAIN-SUFFIX,googlemail.com
-  - DOMAIN-SUFFIX,meet.google.com
-  - DOMAIN-SUFFIX,docs.google.com
-  - DOMAIN-SUFFIX,drive.google.com
-  - DOMAIN-SUFFIX,sheets.google.com
-  - DOMAIN-SUFFIX,slides.google.com
-  - DOMAIN-SUFFIX,calendar.google.com
-  - DOMAIN-SUFFIX,scholar.google.com
-  - DOMAIN-SUFFIX,firebaseio.com
-  - DOMAIN-SUFFIX,firebaseapp.com
-  - DOMAIN-SUFFIX,firebase.com
-  - DOMAIN-SUFFIX,googlechrome.com
-  - DOMAIN-SUFFIX,chrome.com
-  - DOMAIN-SUFFIX,doubleclick.net
-  - DOMAIN-SUFFIX,recaptcha.net
+  # --- 2. Google 基础与 Android 生态 ---
+  - +.google.com
+  - +.play.google.com     # [补全] Play 商店下载更新
+  - +.android.com          # [补全] 安卓系统相关
+  - +.g.co
+  - +.gstatic.com          # [关键] 界面资源加载
+  - +.googleapis.com       # [核心] API 信令交换
+  - +.googleusercontent.com
+  - +.recaptcha.net        # [关键] 验证码
 
-  # ------------------ 3. [DOMAIN-KEYWORD] 模糊匹配 ------------------
-  - DOMAIN-KEYWORD,youtube
+  # --- 3. Google Meet & 实时通讯 (重点增强) ---
+  - +.meet.google.com
+  - +.apis.google.com      # [补全] Meet 协作信令
+  - +.pki.goog             # [关键] 加密证书验证，不通会导致会议连不上
 
-  # ------------------ 4. [IP-CIDR] IP 匹配 ------------------
-  - IP-CIDR,64.233.160.0/19,no-resolve
-  - IP-CIDR,142.250.0.0/15,no-resolve
+  # --- 4. 生产力、地图与云端存储 ---
+  - +.gmail.com
+  - +.googlemail.com
+  - +.drive.google.com
+  - +.docs.google.com
+  - +.sheets.google.com
+  - +.slides.google.com
+  - +.calendar.google.com
+  - +.translate.google.com   # [补全] 浏览器原生翻译
+  - +.news.google.com
+  - +.books.google.com
+  - +.scholar.google.com
+  - +.earth.google.com      # [补全] 谷歌地球
+  - +.one.google.com        # [补全] Google One 存储管理
+  - +.keep.google.com       # [补全] 笔记同步
+  - +.classroom.google.com
 
-  # ------------------ 5. [USER-AGENT] ------------------
-  - USER-AGENT,YouTube*
+  # --- 5. 浏览器、开发与广告拦截补丁 ---
+  - +.firebaseio.com
+  - +.firebaseapp.com
+  - +.firebase.com
+  - +.googlechrome.com
+  - +.chrome.com
+  - +.doubleclick.net
+  - +.googleflights.com
