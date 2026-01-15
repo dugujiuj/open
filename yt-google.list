@@ -1,52 +1,34 @@
-# --- YouTube 全量增强 (建议走高速节点) ---
+# --- YouTube ---
 DOMAIN-SUFFIX,youtube.com
 DOMAIN-SUFFIX,youtu.be
-DOMAIN-SUFFIX,ytimg.com
 DOMAIN-SUFFIX,googlevideo.com
-DOMAIN-SUFFIX,youtubei.googleapis.com
-DOMAIN-SUFFIX,youtube-nocookie.com
-DOMAIN-SUFFIX,youtubeeducation.com
-DOMAIN-SUFFIX,youtubekids.com
-DOMAIN,wide-youtube.l.google.com
-DOMAIN,yt3.googleusercontent.com
+DOMAIN-SUFFIX,ytimg.com
 
-# --- Google 核心与 Play 服务 ---
-DOMAIN-SUFFIX,google.com
+# --- 商店与硬件 ---
+DOMAIN-SUFFIX,store.google.com
+DOMAIN-SUFFIX,pay.google.com
 DOMAIN-SUFFIX,play.google.com
-DOMAIN-SUFFIX,android.com
-DOMAIN-SUFFIX,g.co
-DOMAIN-SUFFIX,gstatic.com
-DOMAIN-SUFFIX,googleapis.com
-DOMAIN-SUFFIX,googleusercontent.com
-DOMAIN-SUFFIX,recaptcha.net
 
-# --- Google Meet 视频会议补丁 (增强稳定性) ---
-DOMAIN-SUFFIX,meet.google.com
-DOMAIN-SUFFIX,apis.google.com
-DOMAIN-SUFFIX,pki.goog
-
-# --- 生产力、地图与云端存储 (全覆盖版) ---
+# --- Google Maps 满血版 ---
+DOMAIN-SUFFIX,maps.google.com
+DOMAIN-SUFFIX,ggpht.com
 DOMAIN-SUFFIX,earth.google.com
+
+# --- Core & Work ---
+DOMAIN-SUFFIX,google.com
+DOMAIN-SUFFIX,gstatic.com
+DOMAIN-SUFFIX,googleusercontent.com
+DOMAIN-SUFFIX,googleapis.com
+DOMAIN-SUFFIX,gmail.com
+DOMAIN-SUFFIX,drive.google.com
+
+# --- 工具与教育 ---
+DOMAIN-SUFFIX,translate.google.com
+DOMAIN-SUFFIX,scholar.google.com
 DOMAIN-SUFFIX,one.google.com
 DOMAIN-SUFFIX,keep.google.com
 DOMAIN-SUFFIX,classroom.google.com
-DOMAIN-SUFFIX,gmail.com
-DOMAIN-SUFFIX,googlemail.com
-DOMAIN-SUFFIX,drive.google.com
-DOMAIN-SUFFIX,docs.google.com
-DOMAIN-SUFFIX,sheets.google.com
-DOMAIN-SUFFIX,slides.google.com
-DOMAIN-SUFFIX,calendar.google.com
-DOMAIN-SUFFIX,translate.google.com
-DOMAIN-SUFFIX,news.google.com
-DOMAIN-SUFFIX,books.google.com
-DOMAIN-SUFFIX,scholar.google.com
 
-# --- 开发、浏览器与广告拦截补丁 ---
-DOMAIN-SUFFIX,firebaseio.com
-DOMAIN-SUFFIX,firebaseapp.com
-DOMAIN-SUFFIX,firebase.com
-DOMAIN-SUFFIX,googlechrome.com
-DOMAIN-SUFFIX,chrome.com
-DOMAIN-SUFFIX,doubleclick.net
-DOMAIN-SUFFIX,googleflights.com
+# --- 系统与会议 ---
+DOMAIN-SUFFIX,pki.goog
+DOMAIN-SUFFIX,android.com
