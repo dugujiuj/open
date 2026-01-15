@@ -1,25 +1,16 @@
-[YouTube-Optimized]
-
-# ------------------ 精确域名 ------------------
-DOMAIN,yt3.googleusercontent.com
-DOMAIN,youtubei.googleapis.com
-DOMAIN,youtube-ui.l.google.com
-DOMAIN,wide-youtube.l.google.com
-DOMAIN,youtubeembeddedplayer.googleapis.com
-DOMAIN,youtube-nocookie.com
-
-# ------------------ 后缀域名 ------------------
+# --- YouTube 核心流量 ---
 DOMAIN-SUFFIX,youtube.com
 DOMAIN-SUFFIX,youtu.be
-DOMAIN-SUFFIX,ytimg.com
 DOMAIN-SUFFIX,googlevideo.com
+DOMAIN-SUFFIX,ytimg.com
 
-# ------------------ 模糊域名兜底 ------------------
-DOMAIN-KEYWORD,youtube
+# --- 官方专项接口 ---
+DOMAIN-SUFFIX,youtubei.googleapis.com
+DOMAIN-SUFFIX,youtube-nocookie.com
+DOMAIN-SUFFIX,youtubeeducation.com
+DOMAIN-SUFFIX,youtubekids.com
+DOMAIN-SUFFIX,yt3.googleusercontent.com
 
-# ------------------ 可选 IP 兜底 ------------------
-IP-CIDR,64.233.160.0/19,no-resolve
-IP-CIDR,142.250.0.0/15,no-resolve
-
-# ------------------ 可选 USER-AGENT ------------------
-USER-AGENT,YouTube*
+# --- 官方补充链路 ---
+DOMAIN,wide-youtube.l.google.com
+DOMAIN,youtube-ui.l.google.com
