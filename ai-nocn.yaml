@@ -1,73 +1,98 @@
 payload:
-  # ------------------ 1. 精确域名 (DOMAIN) - 优先匹配核心 API ------------------
-  - DOMAIN,notebooklm.google
-  - DOMAIN,gemini.google.com
-  - DOMAIN,ai.studio
-  - DOMAIN,aistudio.google.com
-  - DOMAIN,makersuite.google.com
-  - DOMAIN,proactivebackend-pa.googleapis.com
-  - DOMAIN,alkalimakersuite-pa.clients6.google.com
-  - DOMAIN,alkalimakersuite-pa.googleapis.com
-  - DOMAIN,generativelanguage.googleapis.com
-  - DOMAIN,content-storage-upload.googleapis.com
-  - DOMAIN,firestore.googleapis.com
-  - DOMAIN,speech.googleapis.com
-  - DOMAIN,vision.googleapis.com
-  - DOMAIN,lens.google.com
-  - DOMAIN,assistant.google.com
-  - DOMAIN,client6.google.com
-  - DOMAIN,clientservices.googleapis.com
-  - DOMAIN,firebaseinstallations.googleapis.com
-  - DOMAIN,firebaselogging-pa.googleapis.com
-  - DOMAIN,feedback-pa.googleapis.com
-  - DOMAIN,securetoken.googleapis.com
-  - DOMAIN,stun.l.google.com
-  - DOMAIN,chat.openai.com.cdn.cloudflare.net
-  - DOMAIN,openaicom-api-bdcpf8c6d2e9atf6.z01.azurefd.net
-  - DOMAIN,production-openaicom-storage.azureedge.net
-  - DOMAIN,turn.livekit.cloud
-  - DOMAIN,servd-anthropic-website.b-cdn.net
+  # --- g-version (Google / Gemini 系) ---
+  - +.gemini.google # [Google Gemini]
+  - +.gemini.google.com
+  - +.bard.google.com
+  - +.notebooklm.google
+  - +.notebooklm.google.com
+  - +.aistudio.google.com # [Google AI Studio]
+  - +.makersuite.google.com
+  - ai.google.dev
+  - +.generativeai.google
+  - +.generativelanguage.googleapis.com
+  - +.aida.googleapis.com # [Google AI Components]
+  - +.jules.google
+  - +.jules.google.com
+  - +.opal.google
+  - +.opal.google.com
+  - +.labs.google
+  - +.labs.google.com
+  - +.ai.studio
+  - +.gstatic.com # [关键] AI 界面样式加载
+  - +.googleusercontent.com # [关键] Google AI 资源
+  - +.googleapis.com # [关键] Google API 全局
+  - +.recaptcha.net # [补齐] AI 登录验证码
+  - +.deepmind.google
+  - alkalicore-pa.clients6.google.com
+  - alkalimakersuite-pa.clients6.google.com
+  - webchannel-alkalimakersuite-pa.clients6.google.com
+  - cloudaicompanion.googleapis.com
+  - cloudcode-pa.googleapis.com
+  - daily-cloudcode-pa.googleapis.com
+  - notebooklm-pa.googleapis.com
+  - notebooklm.googleapis.com
+  - antigravity-pa.googleapis.com
+  - antigravity.googleapis.com
+  - +.antigravity-unleash.goog
+  - +.antigravity.google
+  - +.robinfrontend-pa.googleapis.com
+  - +.geller-pa.googleapis.com
+  - +.aisandbox-pa.googleapis.com
+  - +.proactivebackend-pa.googleapis.com
 
-  # ------------------ 2. 后缀域名 (DOMAIN-SUFFIX) - 补全 AI 生态 ------------------
-  - DOMAIN-SUFFIX,notebooklm.google
-  - DOMAIN-SUFFIX,gemini.google
-  - DOMAIN-SUFFIX,deepmind.google
-  - DOMAIN-SUFFIX,generativeai.google
-  - DOMAIN-SUFFIX,ai.google.dev
-  - DOMAIN-SUFFIX,aiplatform.googleapis.com
-  - DOMAIN-SUFFIX,chatgpt.com
-  - DOMAIN-SUFFIX,openai.com
-  - DOMAIN-SUFFIX,ai.com
-  - DOMAIN-SUFFIX,oaistatic.com
-  - DOMAIN-SUFFIX,oaiusercontent.com
-  - DOMAIN-SUFFIX,openai.azure.com
-  - DOMAIN-SUFFIX,anthropic.com
-  - DOMAIN-SUFFIX,claude.ai
-  - DOMAIN-SUFFIX,claude.com
-  - DOMAIN-SUFFIX,servd.host
-  - DOMAIN-SUFFIX,google.com
-  - DOMAIN-SUFFIX,googleusercontent.com
-  - DOMAIN-SUFFIX,googleapis.com
-  - DOMAIN-SUFFIX,gstatic.com         # [补齐] 极其关键：AI 界面样式和脚本加载
-  - DOMAIN-SUFFIX,youtube.com
-  - DOMAIN-SUFFIX,youtu.be
-  - DOMAIN-SUFFIX,ytimg.com           # [补齐] 关键：YouTube 封面加载
-  - DOMAIN-SUFFIX,googlevideo.com     # [补齐] 关键：YouTube 视频流播放
-  - DOMAIN-SUFFIX,recaptcha.net       # [补齐] 关键：AI 登录时的验证码
+  # --- r-version (Microsoft Copilot / Bing 系) ---
+  - +.copilot.microsoft.com # [Microsoft Copilot]
+  - +.bing.com
+  - +.bing.net
+  - +.bingapis.com
+  - +.sydney.bing.com # [Copilot Core & Anti-Detection]
+  - +.edgeservices.bing.com
+  - +.vortex.data.microsoft.com
+  - +.location.microsoft.com
+  - browser-intake-datadoghq.com
 
-  # ------------------ 3. 模糊域名 (DOMAIN-KEYWORD) ------------------
-  - DOMAIN-KEYWORD,notebooklm
-  - DOMAIN-KEYWORD,colab
-  - DOMAIN-KEYWORD,generativelanguage
-  - DOMAIN-KEYWORD,openai
-  - DOMAIN-KEYWORD,openaicom-api
+  # --- OpenAI & 其他大模型 ---
+  - +.openai.com # [OpenAI / ChatGPT]
+  - +.chatgpt.com
+  - +.oaistatic.com
+  - +.oaiusercontent.com
+  - +.chat.com
+  - +.sora.com
+  - +.claude.ai # [Claude / Anthropic]
+  - +.claude.com
+  - +.claudeusercontent.com
+  - +.anthropic.com
+  - +.perplexity.ai # [Perplexity AI]
+  - +.perplexity.com
+  - +.pplx.ai
+  - +.grok.com # [xAI / Grok]
+  - +.x.ai
+  - +.grok.x.com
+  - +.mistral.ai
+  - +.cohere.ai
+  - +.meta.ai
 
-  # ------------------ 4. IP 兜底 ------------------
-  - IP-CIDR,64.233.160.0/19,no-resolve
-  - IP-CIDR,142.250.0.0/15,no-resolve
+  # --- AI 编程工具 (Cursor/Trae 等) ---
+  - +.cursor.com # [Cursor]
+  - +.cursor.sh
+  - +.cursorapi.com
+  - +.cursor-cdn.com
+  - +.trae.ai # [Trae]
+  - +.marscode.com # [MarsCode]
+  - +.coze.com # [Coze / Cici]
+  - +.cici.com
+  - +.ciciai.com
+  - +.ciciaicdn.com
 
-  # ------------------ 5. USER-AGENT (指纹识别) ------------------
-  - USER-AGENT,OpenAI*
-  - USER-AGENT,ChatGPT*
-  - USER-AGENT,Gemini*
-  - USER-AGENT,NotebookLM* # [补齐]
+  # --- 基础设施与补丁 ---
+  - +.huggingface.co # [Hugging Face]
+  - +.hf.co
+  - +.poe.com # [Poe]
+  - +.elevenlabs.io # [ElevenLabs]
+  - +.groq.com # [Groq]
+  - +.comfy.org # [ComfyUI]
+  - +.turn.livekit.cloud # [Livekit]
+  - +.gateway.ai.cloudflare.com
+  - o33249.ingest.sentry.io
+  - openaicom-api-bdcpf8c6d2e9atf6.z01.azurefd.net
+  - production-openaicom-storage.azureedge.net
