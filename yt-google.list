@@ -1,38 +1,52 @@
-# YouTube & Google List (Pure Version)
-DOMAIN,yt3.googleusercontent.com
-DOMAIN,youtubei.googleapis.com
-DOMAIN,youtube-ui.l.google.com
-DOMAIN,wide-youtube.l.google.com
-DOMAIN,youtubeembeddedplayer.googleapis.com
-DOMAIN,youtube-nocookie.com
-DOMAIN,googleflights.com
-DOMAIN,proactive.google.com
+# --- YouTube 全量增强 (建议走高速节点) ---
 DOMAIN-SUFFIX,youtube.com
 DOMAIN-SUFFIX,youtu.be
 DOMAIN-SUFFIX,ytimg.com
 DOMAIN-SUFFIX,googlevideo.com
+DOMAIN-SUFFIX,youtubei.googleapis.com
+DOMAIN-SUFFIX,youtube-nocookie.com
+DOMAIN-SUFFIX,youtubeeducation.com
+DOMAIN-SUFFIX,youtubekids.com
+DOMAIN,wide-youtube.l.google.com
+DOMAIN,yt3.googleusercontent.com
+
+# --- Google 核心与 Play 服务 ---
 DOMAIN-SUFFIX,google.com
-DOMAIN-SUFFIX,gstatic.com
-DOMAIN-SUFFIX,googleusercontent.com
-DOMAIN-SUFFIX,googleapis.com
+DOMAIN-SUFFIX,play.google.com
+DOMAIN-SUFFIX,android.com
 DOMAIN-SUFFIX,g.co
+DOMAIN-SUFFIX,gstatic.com
+DOMAIN-SUFFIX,googleapis.com
+DOMAIN-SUFFIX,googleusercontent.com
+DOMAIN-SUFFIX,recaptcha.net
+
+# --- Google Meet 视频会议补丁 (增强稳定性) ---
+DOMAIN-SUFFIX,meet.google.com
+DOMAIN-SUFFIX,apis.google.com
+DOMAIN-SUFFIX,pki.goog
+
+# --- 生产力、地图与云端存储 (全覆盖版) ---
+DOMAIN-SUFFIX,earth.google.com
+DOMAIN-SUFFIX,one.google.com
+DOMAIN-SUFFIX,keep.google.com
+DOMAIN-SUFFIX,classroom.google.com
 DOMAIN-SUFFIX,gmail.com
 DOMAIN-SUFFIX,googlemail.com
-DOMAIN-SUFFIX,meet.google.com
-DOMAIN-SUFFIX,docs.google.com
 DOMAIN-SUFFIX,drive.google.com
+DOMAIN-SUFFIX,docs.google.com
 DOMAIN-SUFFIX,sheets.google.com
 DOMAIN-SUFFIX,slides.google.com
 DOMAIN-SUFFIX,calendar.google.com
+DOMAIN-SUFFIX,translate.google.com
+DOMAIN-SUFFIX,news.google.com
+DOMAIN-SUFFIX,books.google.com
 DOMAIN-SUFFIX,scholar.google.com
+
+# --- 开发、浏览器与广告拦截补丁 ---
 DOMAIN-SUFFIX,firebaseio.com
 DOMAIN-SUFFIX,firebaseapp.com
 DOMAIN-SUFFIX,firebase.com
 DOMAIN-SUFFIX,googlechrome.com
 DOMAIN-SUFFIX,chrome.com
 DOMAIN-SUFFIX,doubleclick.net
-DOMAIN-SUFFIX,recaptcha.net
-DOMAIN-KEYWORD,youtube
-IP-CIDR,64.233.160.0/19
-IP-CIDR,142.250.0.0/15
-USER-AGENT,YouTube*
+DOMAIN-SUFFIX,googleflights.com
