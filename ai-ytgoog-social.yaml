@@ -1,3 +1,7 @@
+# ===================================================
+# Global-AI-Social Aggregation v2.2 (2026-01-16)
+# 覆盖：AI / Google / YouTube / 社交平台 (全球+日本+创作者+CDN)
+# ===================================================
 payload:
   # ------------------ 1. [精确域名] NotebookLM & Gemini 核心置顶 ------------------
   - DOMAIN,notebooklm.google
@@ -114,6 +118,7 @@ payload:
   - DOMAIN-KEYWORD,ident
 
   # ------------------ 4. [社交相关] 分流层 ------------------
+  # Telegram
   - DOMAIN-SUFFIX,t.me
   - DOMAIN-SUFFIX,tdesktop.com
   - DOMAIN-SUFFIX,telegra.ph
@@ -123,6 +128,7 @@ payload:
   - DOMAIN-SUFFIX,tg.dev
   - DOMAIN-SUFFIX,tx.me
   - DOMAIN-KEYWORD,telegram
+  # Meta
   - DOMAIN-SUFFIX,facebook.com
   - DOMAIN-SUFFIX,fb.com
   - DOMAIN-SUFFIX,fbcdn.net
@@ -133,6 +139,7 @@ payload:
   - DOMAIN-SUFFIX,instagramcdn.com
   - DOMAIN-SUFFIX,graph.instagram.com
   - DOMAIN-SUFFIX,graph-fallback.instagram.com
+  # Twitter/X
   - DOMAIN-SUFFIX,twitter.com
   - DOMAIN-SUFFIX,t.co
   - DOMAIN-SUFFIX,twimg.com
@@ -140,11 +147,13 @@ payload:
   - DOMAIN-SUFFIX,twitpic.com
   - DOMAIN-SUFFIX,periscope.tv
   - DOMAIN-SUFFIX,pscp.tv
+  # LinkedIn
   - DOMAIN-SUFFIX,linkedin.com
   - DOMAIN-SUFFIX,licdn.com
   - DOMAIN-SUFFIX,linkedin.cn
   - DOMAIN-SUFFIX,linkedin.at
   - DOMAIN-SUFFIX,lnkd.in
+  # VK
   - DOMAIN-SUFFIX,vk.com
   - DOMAIN-SUFFIX,vk.me
   - DOMAIN-SUFFIX,vklive.app
@@ -152,8 +161,10 @@ payload:
   - DOMAIN-SUFFIX,vkcdn.net
   - DOMAIN-SUFFIX,vkcdn.me
   - DOMAIN-SUFFIX,vkcloud-static.ru
+  # Threads
   - DOMAIN-SUFFIX,threads.net
   - DOMAIN-SUFFIX,threads.com
+  # Misskey
   - DOMAIN-SUFFIX,misskey.io
   - DOMAIN-SUFFIX,misskeyusercontent.jp
   - DOMAIN-SUFFIX,misskey.stream
@@ -161,37 +172,11 @@ payload:
   - DOMAIN-SUFFIX,misskey.cloud
   - DOMAIN-SUFFIX,misskey.design
   - DOMAIN-SUFFIX,misskey.flowers
+  # Line
   - DOMAIN-SUFFIX,line.me
   - DOMAIN-SUFFIX,linecorp.com
   - DOMAIN-SUFFIX,lin.ee
   - DOMAIN-SUFFIX,linefriends.com
   - DOMAIN-SUFFIX,linetv.tw
   - DOMAIN-SUFFIX,linegame.jp
-  - DOMAIN-SUFFIX,line-scdn.net
-  - DOMAIN-SUFFIX,line-cdn.net
-  - DOMAIN-SUFFIX,line-apps.com
-
-  # ------------------ 5. [IP 兜底] 处理 IP 级别匹配 (Telegram 核心) ------------------
-  - IP-CIDR,91.108.4.0/22,no-resolve
-  - IP-CIDR,91.108.8.0/22,no-resolve
-  - IP-CIDR,91.108.12.0/22,no-resolve
-  - IP-CIDR,91.108.16.0/22,no-resolve
-  - IP-CIDR,91.108.20.0/22,no-resolve
-  - IP-CIDR,91.108.56.0/22,no-resolve
-  - IP-CIDR,149.154.160.0/20,no-resolve
-  - IP-CIDR,95.161.192.0/20,no-resolve
-  - IP-CIDR,185.76.151.0/24,no-resolve
-  - IP-ASN,44907,no-resolve
-  - IP-ASN,59930,no-resolve
-  - IP-ASN,62014,no-resolve
-  - IP-ASN,62041,no-resolve
-  - IP-CIDR,64.233.160.0/19,no-resolve
-  - IP-CIDR,142.250.0.0/15,no-resolve
-
-  # ------------------ 6. [User-Agent] 客户端指纹 ------------------
-  - USER-AGENT,NotebookLM*
-  - USER-AGENT,Gemini*
-  - USER-AGENT,OpenAI*
-  - USER-AGENT,ChatGPT*
-  - USER-AGENT,YouTube*
-  - USER-AGENT,Telegram*
+  - DOMAIN-SUFFIX,line-s
