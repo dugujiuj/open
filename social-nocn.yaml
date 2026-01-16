@@ -1,140 +1,134 @@
 # ===================================================
-# 社交 & 通讯全平台聚合 - 终极增强版
-# 包含：IM通讯、主流社媒、内容社区、二次元社区
+# 社交 & 通讯全平台聚合 - 全球+日本深度版
+# 版本：2.2 (2026-01-16)
+# 覆盖：全球主流 + 日韩港台 + 创作者平台
 # ===================================================
 payload:
-  # ---------------- 即时通讯 (WhatsApp / Telegram / Line) ----------------
-  - +.whatsapp.com
+  # ---------------- 即时通讯 ----------------
+  - +.whatsapp.com       # WhatsApp
   - +.whatsapp.net
-  - +.telegram.org
+  - +.telegram.org       # Telegram
   - +.t.me
   - +.tdesktop.com
   - +.telegra.ph
   - +.telegram.me
-  - +.line.me
+  - +.line.me            # Line (日本/台湾/泰国)
   - +.linecorp.com
   - +.lin.ee
   - +.line-scdn.net
-  # Signal (隐私通讯)
-  - +.signal.org
+  - +.signal.org         # Signal
   - +.signal.art
-  # Discord (游戏/社区)
-  - +.discord.com
+  - +.discord.com        # Discord
   - +.discord.gg
   - +.discordapp.com
   - +.discordapp.net
-  # KakaoTalk (韩国)
-  - +.kakao.com
+  - +.kakao.com          # KakaoTalk
   - +.kakaocdn.net
   - +.daum.net
-  # Viber
-  - +.viber.com
-  
-  # ---------------- 内容社区 (Reddit / Pinterest / Snapchat) ----------------
-  - +.reddit.com
-  - +.redd.it
-  - +.redditmedia.com
-  - +.redditstatic.com
-  - +.pinterest.com
-  - +.pinimg.com
-  - +.snapchat.com
-  - +.sc-cdn.net
-  # Tumblr
-  - +.tumblr.com
-  - +.tmblr.co
-  
-  # ---------------- X (Twitter) & X.com ----------------
-  - +.x.com
-  - +.twitter.com
-  - +.t.co
-  - +.twimg.com
-  
-  # ---------------- Meta 家族 (FB / IG / Threads / Messenger) ----------------
-  - +.facebook.com
-  - +.fb.com
-  - +.fbcdn.net
-  - +.fbsbx.com
-  - +.messenger.com
-  - +.instagram.com
-  - +.cdninstagram.com
-  - +.threads.net
-  
-  # ---------------- 职场与协作 (LinkedIn / Microsoft / Slack) ----------------
-  - +.linkedin.com
-  - +.licdn.com
-  - +.lnkd.in
-  # Microsoft Teams & Skype
-  - +.teams.microsoft.com
+  - +.viber.com          # Viber
+  # ---------------- Microsoft 生态 ----------------
+  - +.teams.microsoft.com # Teams
   - +.teams.live.com
-  - +.skype.com
+  - +.skype.com           # Skype
   - +.skypeassets.com
   - +.skypeformedia.com
-  - +.office.com
+  - +.office.com          # Office 365
   - +.office365.com
   - +.microsoftonline.com
   - +.sharepoint.com
   - +.onedrive.live.com
-  # Slack
-  - +.slack.com
+  # ---------------- 内容社区 ----------------
+  - +.reddit.com          # Reddit
+  - +.redd.it
+  - +.redditmedia.com
+  - +.redditstatic.com
+  - +.pinterest.com       # Pinterest
+  - +.pinimg.com
+  - +.snapchat.com        # Snapchat
+  - +.sc-cdn.net
+  - +.tumblr.com          # Tumblr
+  - +.tmblr.co
+  - +.quora.com           # Quora
+  - +.medium.com          # Medium
+  - +.flickr.com          # Flickr
+  - +.staticflickr.com
+  - +.deviantart.com      # DeviantArt
+  - +.deviantart.net
+  # ---------------- X (Twitter) ----------------
+  - +.x.com               # Twitter/X
+  - +.twitter.com
+  - +.t.co
+  - +.twimg.com
+  # ---------------- Meta 家族 ----------------
+  - +.facebook.com        # Facebook
+  - +.fb.com
+  - +.fbcdn.net
+  - +.fbsbx.com
+  - +.instagram.com       # Instagram
+  - +.cdninstagram.com
+  - +.threads.net         # Threads
+  - +.messenger.com       # Messenger
+  # ---------------- 职场社交 ----------------
+  - +.linkedin.com        # LinkedIn
+  - +.licdn.com
+  - +.lnkd.in
+  - +.slack.com           # Slack
   - +.slack-edge.com
-  # Zoom & Webex
-  - +.zoom.us
-  - +.zoom.com
-  - +.webex.com
-  - +.ciscospark.com
-  
+  # ---------------- 创作者平台 ----------------
+  - +.patreon.com         # Patreon
+  - +.substack.com        # Substack
+  - +.ko-fi.com           # Ko-fi
+  - +.onlyfans.com        # OnlyFans
+  - +.onlyfans.net
   # ---------------- 日本特色平台 ----------------
-  # pixiv (插画社区)
-  - +.pixiv.net
+  - +.pixiv.net           # Pixiv
   - +.pximg.net
-  # niconico (弹幕视频)
-  - +.nicovideo.jp
+  - +.nicovideo.jp        # Niconico
   - +.nimg.jp
   - +.dmc.nico
-  # Mixi (本土SNS)
-  - +.mixi.jp
+  - +.seiga.nicovideo.jp
+  - +.fc2.com             # FC2
+  - +.fc2.net
+  - +.mixi.jp             # Mixi
   - +.mixi.net
-  # Ameba (博客)
-  - +.ameba.jp
+  - +.ameba.jp            # Ameba
   - +.ameblo.jp
-  # 2ch/5ch (论坛)
-  - +.5ch.net
+  - +.hatena.ne.jp        # Hatena
+  - +.hatena.com
+  - +.cookpad.com         # Cookpad
+  - +.livedoor.com        # Livedoor
+  - +.livedoor.jp
+  - +.yahoo.co.jp         # Yahoo! Japan
+  - +.5ch.net             # 2ch/5ch
   - +.2ch.sc
-  
-  # ---------------- 韩国平台 ----------------
-  # Naver (韩国门户)
-  - +.naver.com
-  - +.naver.net
-  - +.pstatic.net
-  
-  # ---------------- 俄罗斯 (VK) ----------------
-  - +.vk.com
-  - +.vk.me
-  - +.vkcdn.net
-  
   # ---------------- Misskey & 去中心化 ----------------
-  - +.misskey.io
+  - +.misskey.io          # Misskey
   - +.misskeyusercontent.jp
   - +.misskey.art
-  # Mastodon
-  - +.mastodon.social
+  - +.mastodon.social     # Mastodon
   - +.mastodon.cloud
   - +.pawoo.net
-  
+  # ---------------- 韩国平台 ----------------
+  - +.naver.com           # Naver
+  - +.naver.net
+  - +.pstatic.net
+  # ---------------- 俄罗斯 ----------------
+  - +.vk.com              # VK
+  - +.vk.me
+  - +.vkcdn.net
   # ---------------- 港台特色 ----------------
-  # LIHKG (香港连登)
-  - +.lihkg.com
-  # PTT (台湾批踢踢)
-  - +.ptt.cc
+  - +.lihkg.com           # LIHKG
+  - +.ptt.cc              # PTT
   - +.pttweb.cc
-  # Dcard (台湾社区)
-  - +.dcard.tw
-  
+  - +.dcard.tw            # Dcard
   # ---------------- 视频社交平台 ----------------
-  # TikTok
-  - +.tiktok.com
+  - +.tiktok.com          # TikTok
   - +.tiktokcdn.com
   - +.musical.ly
-  # Twitch (直播)
-  - +.twitch.tv
+  - +.twitch.tv           # Twitch
   - +.ttvnw.net
+  # ---------------- 其他重要平台 ----------------
+  - +.zoom.us             # Zoom
+  - +.zoom.com
+  - +.webex.com           # Webex
+  - +.ciscospark.com
