@@ -1,4 +1,6 @@
-# --- 1. [DOMAIN] 精确域名 ---
+# Global-AI-Social Aggregation v2.2 (2026-01-16)
+# 优化版：调整了匹配优先级并补充了 ChatGPT 静态资源
+
 DOMAIN,notebooklm.google
 DOMAIN,notebooklm.googleapis.com
 DOMAIN,notebooklm-pa.googleapis.com
@@ -35,10 +37,19 @@ DOMAIN,stun.l.google.com
 DOMAIN,chat.openai.com.cdn.cloudflare.net
 DOMAIN,openaicom-api-bdcpf8c6d2e9atf6.z01.azurefd.net
 DOMAIN,production-openaicom-storage.azureedge.net
+DOMAIN,openaiapi-site.azureedge.net
 DOMAIN,turn.livekit.cloud
 DOMAIN,servd-anthropic-website.b-cdn.net
 
-# --- 2. [DOMAIN-SUFFIX] 后缀域名 ---
+DOMAIN-KEYWORD,notebooklm
+DOMAIN-KEYWORD,openai
+DOMAIN-KEYWORD,youtube
+DOMAIN-KEYWORD,colab
+DOMAIN-KEYWORD,generativelanguage
+DOMAIN-KEYWORD,openaicom-api
+DOMAIN-KEYWORD,ipleak
+DOMAIN-KEYWORD,ident
+
 DOMAIN-SUFFIX,notebooklm.google
 DOMAIN-SUFFIX,gemini.google
 DOMAIN-SUFFIX,deepmind.google
@@ -50,6 +61,7 @@ DOMAIN-SUFFIX,ai.com
 DOMAIN-SUFFIX,oaistatic.com
 DOMAIN-SUFFIX,oaiusercontent.com
 DOMAIN-SUFFIX,openai.azure.com
+DOMAIN-SUFFIX,openaiapi-site.azureedge.net
 DOMAIN-SUFFIX,anthropic.com
 DOMAIN-SUFFIX,claude.ai
 DOMAIN-SUFFIX,claude.com
@@ -102,17 +114,7 @@ DOMAIN-SUFFIX,ip-api.com
 DOMAIN-SUFFIX,browserleaks.com
 DOMAIN-SUFFIX,servd.host
 
-# --- 3. [DOMAIN-KEYWORD] 关键字 ---
-DOMAIN-KEYWORD,notebooklm
-DOMAIN-KEYWORD,openai
-DOMAIN-KEYWORD,youtube
-DOMAIN-KEYWORD,colab
-DOMAIN-KEYWORD,generativelanguage
-DOMAIN-KEYWORD,openaicom-api
-DOMAIN-KEYWORD,ipleak
-DOMAIN-KEYWORD,ident
-
-# --- 4. [Social] 社交相关 ---
+# Telegram
 DOMAIN-SUFFIX,t.me
 DOMAIN-SUFFIX,tdesktop.com
 DOMAIN-SUFFIX,telegra.ph
@@ -122,6 +124,8 @@ DOMAIN-SUFFIX,telegram.space
 DOMAIN-SUFFIX,tg.dev
 DOMAIN-SUFFIX,tx.me
 DOMAIN-KEYWORD,telegram
+
+# Meta
 DOMAIN-SUFFIX,facebook.com
 DOMAIN-SUFFIX,fb.com
 DOMAIN-SUFFIX,fbcdn.net
@@ -132,6 +136,8 @@ DOMAIN-SUFFIX,cdninstagram.com
 DOMAIN-SUFFIX,instagramcdn.com
 DOMAIN-SUFFIX,graph.instagram.com
 DOMAIN-SUFFIX,graph-fallback.instagram.com
+
+# Twitter/X
 DOMAIN-SUFFIX,twitter.com
 DOMAIN-SUFFIX,t.co
 DOMAIN-SUFFIX,twimg.com
@@ -139,11 +145,15 @@ DOMAIN-SUFFIX,twttr.com
 DOMAIN-SUFFIX,twitpic.com
 DOMAIN-SUFFIX,periscope.tv
 DOMAIN-SUFFIX,pscp.tv
+
+# LinkedIn
 DOMAIN-SUFFIX,linkedin.com
 DOMAIN-SUFFIX,licdn.com
 DOMAIN-SUFFIX,linkedin.cn
 DOMAIN-SUFFIX,linkedin.at
 DOMAIN-SUFFIX,lnkd.in
+
+# VK
 DOMAIN-SUFFIX,vk.com
 DOMAIN-SUFFIX,vk.me
 DOMAIN-SUFFIX,vklive.app
@@ -151,8 +161,12 @@ DOMAIN-SUFFIX,vkmessenger.app
 DOMAIN-SUFFIX,vkcdn.net
 DOMAIN-SUFFIX,vkcdn.me
 DOMAIN-SUFFIX,vkcloud-static.ru
+
+# Threads
 DOMAIN-SUFFIX,threads.net
 DOMAIN-SUFFIX,threads.com
+
+# Misskey
 DOMAIN-SUFFIX,misskey.io
 DOMAIN-SUFFIX,misskeyusercontent.jp
 DOMAIN-SUFFIX,misskey.stream
@@ -160,37 +174,11 @@ DOMAIN-SUFFIX,misskey.art
 DOMAIN-SUFFIX,misskey.cloud
 DOMAIN-SUFFIX,misskey.design
 DOMAIN-SUFFIX,misskey.flowers
+
+# Line
 DOMAIN-SUFFIX,line.me
 DOMAIN-SUFFIX,linecorp.com
 DOMAIN-SUFFIX,lin.ee
 DOMAIN-SUFFIX,linefriends.com
 DOMAIN-SUFFIX,linetv.tw
 DOMAIN-SUFFIX,linegame.jp
-DOMAIN-SUFFIX,line-scdn.net
-DOMAIN-SUFFIX,line-cdn.net
-DOMAIN-SUFFIX,line-apps.com
-
-# --- 5. [IP-CIDR / ASN] IP 补丁 ---
-IP-CIDR,91.108.4.0/22
-IP-CIDR,91.108.8.0/22
-IP-CIDR,91.108.12.0/22
-IP-CIDR,91.108.16.0/22
-IP-CIDR,91.108.20.0/22
-IP-CIDR,91.108.56.0/22
-IP-CIDR,149.154.160.0/20
-IP-CIDR,95.161.192.0/20
-IP-CIDR,185.76.151.0/24
-IP-ASN,44907
-IP-ASN,59930
-IP-ASN,62014
-IP-ASN,62041
-IP-CIDR,64.233.160.0/19
-IP-CIDR,142.250.0.0/15
-
-# --- 6. [USER-AGENT] 用户代理 ---
-USER-AGENT,NotebookLM*
-USER-AGENT,Gemini*
-USER-AGENT,OpenAI*
-USER-AGENT,ChatGPT*
-USER-AGENT,YouTube*
-USER-AGENT,Telegram*
