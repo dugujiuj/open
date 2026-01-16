@@ -2,7 +2,6 @@
 # 社交 & 通讯全平台聚合 - 终极增强版
 # 包含：IM通讯、主流社媒、内容社区、二次元社区
 # ===================================================
-
 payload:
   # ---------------- 即时通讯 (WhatsApp / Telegram / Line) ----------------
   - +.whatsapp.com
@@ -16,7 +15,21 @@ payload:
   - +.linecorp.com
   - +.lin.ee
   - +.line-scdn.net
-
+  # Signal (隐私通讯)
+  - +.signal.org
+  - +.signal.art
+  # Discord (游戏/社区)
+  - +.discord.com
+  - +.discord.gg
+  - +.discordapp.com
+  - +.discordapp.net
+  # KakaoTalk (韩国)
+  - +.kakao.com
+  - +.kakaocdn.net
+  - +.daum.net
+  # Viber
+  - +.viber.com
+  
   # ---------------- 内容社区 (Reddit / Pinterest / Snapchat) ----------------
   - +.reddit.com
   - +.redd.it
@@ -26,13 +39,16 @@ payload:
   - +.pinimg.com
   - +.snapchat.com
   - +.sc-cdn.net
-
+  # Tumblr
+  - +.tumblr.com
+  - +.tmblr.co
+  
   # ---------------- X (Twitter) & X.com ----------------
   - +.x.com
   - +.twitter.com
   - +.t.co
   - +.twimg.com
-
+  
   # ---------------- Meta 家族 (FB / IG / Threads / Messenger) ----------------
   - +.facebook.com
   - +.fb.com
@@ -42,16 +58,83 @@ payload:
   - +.instagram.com
   - +.cdninstagram.com
   - +.threads.net
-
-  # ---------------- 职场与俄区 (LinkedIn / VK) ----------------
+  
+  # ---------------- 职场与协作 (LinkedIn / Microsoft / Slack) ----------------
   - +.linkedin.com
   - +.licdn.com
   - +.lnkd.in
+  # Microsoft Teams & Skype
+  - +.teams.microsoft.com
+  - +.teams.live.com
+  - +.skype.com
+  - +.skypeassets.com
+  - +.skypeformedia.com
+  - +.office.com
+  - +.office365.com
+  - +.microsoftonline.com
+  - +.sharepoint.com
+  - +.onedrive.live.com
+  # Slack
+  - +.slack.com
+  - +.slack-edge.com
+  # Zoom & Webex
+  - +.zoom.us
+  - +.zoom.com
+  - +.webex.com
+  - +.ciscospark.com
+  
+  # ---------------- 日本特色平台 ----------------
+  # pixiv (插画社区)
+  - +.pixiv.net
+  - +.pximg.net
+  # niconico (弹幕视频)
+  - +.nicovideo.jp
+  - +.nimg.jp
+  - +.dmc.nico
+  # Mixi (本土SNS)
+  - +.mixi.jp
+  - +.mixi.net
+  # Ameba (博客)
+  - +.ameba.jp
+  - +.ameblo.jp
+  # 2ch/5ch (论坛)
+  - +.5ch.net
+  - +.2ch.sc
+  
+  # ---------------- 韩国平台 ----------------
+  # Naver (韩国门户)
+  - +.naver.com
+  - +.naver.net
+  - +.pstatic.net
+  
+  # ---------------- 俄罗斯 (VK) ----------------
   - +.vk.com
   - +.vk.me
   - +.vkcdn.net
-
+  
   # ---------------- Misskey & 去中心化 ----------------
   - +.misskey.io
   - +.misskeyusercontent.jp
   - +.misskey.art
+  # Mastodon
+  - +.mastodon.social
+  - +.mastodon.cloud
+  - +.pawoo.net
+  
+  # ---------------- 港台特色 ----------------
+  # LIHKG (香港连登)
+  - +.lihkg.com
+  # PTT (台湾批踢踢)
+  - +.ptt.cc
+  - +.pttweb.cc
+  # Dcard (台湾社区)
+  - +.dcard.tw
+  
+  # ---------------- 视频社交平台 ----------------
+  # TikTok
+  - +.tiktok.com
+  - +.tiktokcdn.com
+  - +.musical.ly
+  # Twitch (直播)
+  - +.twitch.tv
+  - +.ttvnw.net
