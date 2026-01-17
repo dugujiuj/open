@@ -4,12 +4,6 @@
 # ===================================================
 payload:
   # ------------------ 1. [关键词] 提高模糊匹配优先级 ------------------
-  - DOMAIN-KEYWORD,openai
-  - DOMAIN-KEYWORD,youtube
-  - DOMAIN-KEYWORD,colab
-  - DOMAIN-KEYWORD,generativelanguage
-  - DOMAIN-KEYWORD,openaicom-api
-
   # ------------------ 2. [后缀域名] 核心 AI 与 Google 基础 ------------------
   - DOMAIN-SUFFIX,notebooklm.google
   - DOMAIN-SUFFIX,gemini.google
