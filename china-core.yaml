@@ -1,0 +1,79 @@
+# ===============================
+# China-Core.yaml (折中版精简)
+# 2026-01-17
+# 支付、购票、临时身份证、AI、视频、核心内容及热门站点
+# Apple / iCloud 已由 skip-proxy 直连，无需重复
+# ===============================
+
+payload:
+  # ---- 支付 / 钱包 / 银联 ----
+  - DOMAIN-SUFFIX,alipay.com
+  - DOMAIN-SUFFIX,zhifubao.com
+  - DOMAIN-SUFFIX,weixin.com
+  - DOMAIN-SUFFIX,weixin.qq.com
+  - DOMAIN-SUFFIX,tenpay.com
+  - DOMAIN-SUFFIX,unionpay.cn
+
+  # ---- 火车票购票（含临时身份证绑定） ----
+  - DOMAIN-SUFFIX,12306.cn
+  - DOMAIN-SUFFIX,kyfw.12306.cn
+
+  # ---- 核心搜索 / 门户 / 内容 ----
+  - DOMAIN-SUFFIX,baidu.com
+  - DOMAIN-SUFFIX,sogou.com
+  - DOMAIN-SUFFIX,so.com
+  - DOMAIN-SUFFIX,163.com
+  - DOMAIN-SUFFIX,126.com
+  - DOMAIN-SUFFIX,sina.com
+  - DOMAIN-SUFFIX,sohu.com
+  - DOMAIN-SUFFIX,ifeng.com
+  - DOMAIN-SUFFIX,qq.com
+  - DOMAIN-SUFFIX,zhihu.com
+  - DOMAIN-SUFFIX,toutiao.com
+  - DOMAIN-SUFFIX,douyin.com
+  - DOMAIN-SUFFIX,xiaohongshu.com
+
+  # ---- 社交 / 通讯 ----
+  - DOMAIN-SUFFIX,weixin.com
+  - DOMAIN-SUFFIX,weixin.qq.com
+  - DOMAIN-SUFFIX,qqmail.com
+  - DOMAIN-SUFFIX,weibo.com
+  - DOMAIN-SUFFIX,dingtalk.com
+
+  # ---- 视频 / 直播 ----
+  - DOMAIN-SUFFIX,bilibili.com
+  - DOMAIN-SUFFIX,acfun.cn
+  - DOMAIN-SUFFIX,maoyan.com
+  - DOMAIN-SUFFIX,douyin.com
+
+  # ---- 电商 / 本地生活 ----
+  - DOMAIN-SUFFIX,taobao.com
+  - DOMAIN-SUFFIX,tmall.com
+  - DOMAIN-SUFFIX,jd.com
+  - DOMAIN-SUFFIX,meituan.com
+  - DOMAIN-SUFFIX,ele.me
+  - DOMAIN-SUFFIX,mi.com
+  - DOMAIN-SUFFIX,mihoyo.com
+
+  # ---- 国内 AI ----
+  - DOMAIN-SUFFIX,ai.baidu.com
+  - DOMAIN-SUFFIX,aip.baidubce.com
+  - DOMAIN-SUFFIX,xfyun.cn
+  - DOMAIN-SUFFIX,open.xfyun.cn
+  - DOMAIN-SUFFIX,huaweicloud.com
+  - DOMAIN-SUFFIX,ei.myhuaweicloud.com
+  - DOMAIN-SUFFIX,aliyun.com
+  - DOMAIN-SUFFIX,ai.aliyun.com
+  - DOMAIN-SUFFIX,cloud.tencent.com
+  - DOMAIN-SUFFIX,ai.qq.com
+
+  # ---- 云服务 / CDN（提升大型 APP 访问稳定性） ----
+  - DOMAIN-SUFFIX,alicdn.com
+  - DOMAIN-SUFFIX,aliyuncs.com
+  - DOMAIN-SUFFIX,qcloud.com
+  - DOMAIN-SUFFIX,jdcloud.com
+  - DOMAIN-SUFFIX,jdcdn.com
+  - DOMAIN-SUFFIX,meituan.net
+  - DOMAIN-SUFFIX,baidupcs.com
+  - DOMAIN-SUFFIX,163yun.com
+  - DOMAIN-SUFFIX,baidubce.com
