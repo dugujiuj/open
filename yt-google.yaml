@@ -1,11 +1,15 @@
-# ===================================================
-# YouTube & Google 终极聚合 - 2026 最终封笔版
-# 包含：YouTube, 办公, 教育, 商店, 地图, 硬件, 翻译, 学术
-# ===================================================
-
 payload:
-  # --- 1. YouTube 官方全链路 ---
+  # ===================================================
+  # YouTube & Google 专项 - 最终版（约65条）
+  # 注释：
+  #   • 未包含的 Google 服务（属于 YouTube/Google 但本规则集未覆盖）：
+  #       - Google 专门的 AI 服务（Gemini / NotebookLM / DeepMind 等）
+  #       - Google Meet / Chat / Spaces
+  # ===================================================
+
+  # --- 1. YouTube 核心 ---
   - +.youtube.com
+  - +.www.youtube.com
   - +.youtu.be
   - +.googlevideo.com
   - +.ytimg.com
@@ -13,46 +17,53 @@ payload:
   - +.youtube-nocookie.com
   - +.yt3.googleusercontent.com
 
-  # --- 2. Google 核心基础服务 ---
+  # --- 2. Gmail ---
+  - +.gmail.com
+  - +.mail.google.com
+  - +.googlemail.com
+
+  # --- 3. Drive / Docs / Sheets / Slides / Forms ---
+  - +.drive.google.com
+  - +.docs.google.com
+  - +.sheets.google.com
+  - +.slides.google.com
+  - +.forms.google.com
+
+  # --- 4. Calendar / Classroom / Keep ---
+  - +.calendar.google.com
+  - +.classroom.google.com
+  - +.keep.google.com
+
+  # --- 5. Maps / Earth / 街景 ---
+  - +.maps.google.com
+  - +.earth.google.com
+  - +.ggpht.com
+  - +.streetview.googleapis.com
+
+  # --- 6. Translate / Scholar / Books / News ---
+  - +.translate.google.com
+  - +.scholar.google.com
+  - +.books.google.com
+  - +.news.google.com
+
+  # --- 7. Play / Store / Pay / Android API ---
+  - +.play.google.com
+  - +.store.google.com
+  - +.pay.google.com
+  - +.android.googleapis.com
+
+  # --- 8. 系统 / 静态资源 / 会话支撑 ---
   - +.google.com
   - +.gstatic.com
   - +.googleusercontent.com
   - +.googleapis.com
   - +.g.co
   - +.recaptcha.net
-
-  # --- 3. 硬件、商店与支付 (新增补强) ---
-  - +.store.google.com          # [新增] Pixel/Nest 硬件商店
-  - +.pay.google.com            # Google Pay 支付链路
-  - +.play.google.com           # Play 商店
-
-  # --- 4. Google Maps 满血特化 (Copilot 推荐) ---
-  - +.maps.google.com   # 地图主站核心入口
-  - +.ggpht.com                                        # 街景与地点照片
-  - +.earth.google.com                                 # Google Earth
-
-  # --- 5. 生产力、教育与协作 ---
-  - +.gmail.com
-  - +.googlemail.com
-  - +.drive.google.com
-  - +.docs.google.com
-  - +.sheets.google.com
-  - +.slides.google.com
-  - +.calendar.google.com
-  - +.classroom.google.com
-
-  # --- 6. 科研、翻译与云服务 ---
-  - +.scholar.google.com
-  - +.books.google.com
-  - +.news.google.com
-  - +.one.google.com
-  - +.keep.google.com
-  - +.translate.google.com
-
-  # --- 7. 系统、会议与开发 ---
   - +.android.com
-  - +.pki.goog                 # Google Meet 验证
   - +.chrome.com
   - +.googlechrome.com
   - +.firebaseio.com
   - +.doubleclick.net
+  - +.fonts.googleapis.com
+  - +.fonts.gstatic.com
+  - +.appspot.com
