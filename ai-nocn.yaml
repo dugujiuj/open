@@ -36,6 +36,7 @@ payload:
   - +.aisandbox-pa.googleapis.com
 
   # --- r-version (Microsoft Copilot / Bing 系) ---
+  - +.copilot.com
   - +.copilot.microsoft.com # [Microsoft Copilot]
   - +.copilot.cloud.microsoft.com
   - +.bing.com
