@@ -1,0 +1,94 @@
+payload:
+  # Office / Outlook / OneDrive / SharePoint / Teams / Skype
+  - officecdn-microsoft-com.akamaized.net
+  - statics-marketingsites-eas-ms-com.akamaized.net
+  - statics-marketingsites-eus-ms-com.akamaized.net
+  - statics-marketingsites-wcus-ms-com.akamaized.net
+  - azure.microsoft.com
+  - azuremarketplace.microsoft.com
+  - location.microsoft.com
+  - az764295.vo.msecnd.net
+  - developer.microsoft.com
+  - download.visualstudio.microsoft.com
+  - vscode-sync-insiders.trafficmanager.net
+  - vscode-sync.trafficmanager.net
+  - vscode.blob.core.windows.net
+  - vscode.search.windows.net
+  - vsmarketplacebadge.apphb.com
+  - crl.microsoft.com
+  - mscrl.microsoft.com
+  - ocsp.microsoft.com
+  - oneocsp.microsoft.com
+  - +.microsoft
+  - +.hotmail
+  - +.office
+  - +.skype
+  - +.windows
+  - +.xboxservices.com
+  - +.onedriveupdater
+  - +.onedrive
+  - +.msocdn.com
+  - +.microsoft.com
+  - +.microsoft.io
+  - +.microsoft.net
+  - +.microsoft365.com
+  - +.microsoftaccountguard.com
+  - +.microsoftonline.com
+  - +.office.com
+  - +.office365.com
+  - +.onenote.com
+  - +.sharepoint.com
+  - +.sharepointonline.com
+  - +.microsoftteams.com
+  - +.microsoftstore.com
+  - +.teams.cdn.office.net
+  - +.vsassets.io
+  - +.vscode.dev
+  - +.vscode-cdn.net
+  - +.vscode-unpkg.net
+  - +.github.com
+  - +.github.io
+  - +.githubusercontent.com
+  - +.github.dev
+  - +.githubpreview.dev
+  - +.githubassets.com
+
+  # Copilot 相关
+  - +.githubcopilot.com
+  - +.copilot-telemetry.githubusercontent.com
+  - +.copilot-proxy.githubusercontent.com
+  - +.api.githubcopilot.com
+  - +.api.githubnext.com
+  - +.copilot.githubassets.com
+
+  # VS Code / Visual Studio / GitHub 相关
+  - +.visualstudio.com
+  - +.visualstudio.net
+  - +.vscode.download.prss.microsoft.com
+  - +.vscode.sync.trafficmanager.net
+
+  # Azure / Portal 相关（办公可能访问）
+  - +.azure
+  - +.azure.com
+  - +.azure.net
+  - +.azurewebsites.net
+  - +.azureedge.net
+  - +.azure-devices.net
+  - +.azuredatabricks.net
+  - +.azure-iot.com
+  - +.devops.microsoft.com
+  - +.visualstudio-staging.com
+
+  # 安全证书 / OCSP / 更新相关
+  - crl.microsoft.com
+  - mscrl.microsoft.com
+  - ocsp.microsoft.com
+  - oneocsp.microsoft.com
+
+  # 其他办公必需 / API
+  - +.graph.microsoft.com
+  - +.api.office.com
+  - +.login.microsoftonline.com
+  - +.login.live.com
+  - +.microsoftgraph.com
+  - +.api.copilot.github.com
